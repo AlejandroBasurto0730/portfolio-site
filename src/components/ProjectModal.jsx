@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import ImageLightbox from "./ImageLightbox";
+import VideoLightbox from "./VideoLightbox";
 
 export default function ProjectModal({ project, onClose }) {
-  const [zoomedSrc, setZoomedSrc] = useState(null);
+  const [zoomed, setZoomed] = useState(null); // { type, src, poster, orientation }
 
   useEffect(() => {
     const onKey = (e) => {
-      if (e.key === "Escape" && !zoomedSrc) onClose();
+      if (e.key === "Escape" && !zoomed) onClose();
     };
     document.addEventListener("keydown", onKey);
     document.body.style.overflow = "hidden";
@@ -15,7 +16,7 @@ export default function ProjectModal({ project, onClose }) {
       document.removeEventListener("keydown", onKey);
       document.body.style.overflow = "";
     };
-  }, [onClose, zoomedSrc]);
+  }, [onClose, zoomed]);
 
   if (!project) return null;
   const { title, type, year, blurb, caseStudy } = project;
@@ -63,22 +64,39 @@ export default function ProjectModal({ project, onClose }) {
           {caseStudy?.sections.map((section) => (
             <div key={section.title} className="modal-section">
               <h3 className="modal-section-title">{section.title}</h3>
-              <div className="modal-image-grid">
-                {section.images.map((img) => {
-                  const src = typeof img === "string" ? img : img.src;
-                  const caption = typeof img === "string" ? null : img.caption;
+              <div className={`modal-image-grid ${section.layout === "compare" ? "is-compare" : ""}`}>
+                {section.images.map((item) => {
+                  const src = typeof item === "string" ? item : item.src;
+                  const caption = typeof item === "string" ? null : item.caption;
+                  const isVideo = typeof item === "object" && item.type === "video";
+                  const poster = typeof item === "object" ? item.poster : undefined;
+                  const orientation = typeof item === "object" ? item.orientation : undefined;
+
                   return (
                     <div key={src} className="modal-image-item">
-                      <button
-                        className="modal-image-frame"
-                        onClick={() => setZoomedSrc(src)}
-                        aria-label="View larger"
-                      >
-                        <img src={src} alt={caption || `${title} — ${section.title}`} loading="lazy" />
-                        <span className="modal-image-expand" aria-hidden="true">
-                          ⤢
-                        </span>
-                      </button>
+                      {isVideo ? (
+                        <button
+                          className="modal-image-frame"
+                          onClick={() => setZoomed({ type: "video", src, poster, orientation })}
+                          aria-label="Play larger"
+                        >
+                          <video src={src} poster={poster} muted loop playsInline preload="metadata" />
+                          <span className="modal-image-expand" aria-hidden="true">
+                            ⤢
+                          </span>
+                        </button>
+                      ) : (
+                        <button
+                          className="modal-image-frame"
+                          onClick={() => setZoomed({ type: "image", src })}
+                          aria-label="View larger"
+                        >
+                          <img src={src} alt={caption || `${title} — ${section.title}`} loading="lazy" />
+                          <span className="modal-image-expand" aria-hidden="true">
+                            ⤢
+                          </span>
+                        </button>
+                      )}
                       {caption && <p className="modal-image-caption">{caption}</p>}
                     </div>
                   );
@@ -89,8 +107,16 @@ export default function ProjectModal({ project, onClose }) {
         </div>
       </div>
 
-      {zoomedSrc && (
-        <ImageLightbox src={zoomedSrc} alt={title} onClose={() => setZoomedSrc(null)} />
+      {zoomed?.type === "image" && (
+        <ImageLightbox src={zoomed.src} alt={title} onClose={() => setZoomed(null)} />
+      )}
+      {zoomed?.type === "video" && (
+        <VideoLightbox
+          src={zoomed.src}
+          title={title}
+          orientation={zoomed.orientation}
+          onClose={() => setZoomed(null)}
+        />
       )}
     </>,
     document.body

@@ -154,6 +154,36 @@ export const projects = [
     mediaType: "video",
     poster: "/projects/house-of-knifes-poster.jpg",
     orientation: "vertical",
+    caseStudy: {
+      problem:
+        "House of Knifes had already filmed a promo for their warehouse sale, but it was a plain phone selfie video — a guy talking in the warehouse with a few logos and text slapped on top, no pacing, nothing that would make someone stop scrolling.",
+      research:
+        "I watched their existing video a few times to figure out what they actually needed to say — the sale, the discount, the categories on offer — then stripped that down to the handful of lines that mattered instead of the whole rambling clip.",
+      solution:
+        "Rebuilt it from scratch as a vertical, typography-led edit: sharp cuts, bold text reveals timed to the message, and a consistent visual rhythm instead of one static shot. Same information, but built to actually hold attention on Instagram and TikTok instead of just existing there.",
+      sections: [
+        {
+          title: "Before & After",
+          layout: "compare",
+          images: [
+            {
+              src: "/projects/house-of-knifes-case-study/before-original.mp4",
+              type: "video",
+              poster: "/projects/house-of-knifes-case-study/before-poster.jpg",
+              orientation: "vertical",
+              caption: "Before — the original raw selfie video, shot and posted as-is.",
+            },
+            {
+              src: "/projects/house-of-knifes-warehouse-sale.mp4",
+              type: "video",
+              poster: "/projects/house-of-knifes-poster.jpg",
+              orientation: "vertical",
+              caption: "After — my edit, rebuilt around typography and pacing.",
+            },
+          ],
+        },
+      ],
+    },
     link: "",
   },
   {

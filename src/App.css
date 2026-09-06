@@ -823,6 +823,17 @@ section {
   gap: 20px;
 }
 
+.modal-image-grid.is-compare {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 560px;
+}
+
+@media (max-width: 640px) {
+  .modal-image-grid.is-compare {
+    grid-template-columns: 1fr;
+  }
+}
+
 .modal-image-item {
   display: flex;
   flex-direction: column;
@@ -848,14 +859,16 @@ section {
   width: 100%;
 }
 
-.modal-image-frame img {
+.modal-image-frame img,
+.modal-image-frame video {
   width: 100%;
   height: auto;
   display: block;
   transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-.modal-image-frame:hover img {
+.modal-image-frame:hover img,
+.modal-image-frame:hover video {
   transform: scale(1.03);
 }
 
