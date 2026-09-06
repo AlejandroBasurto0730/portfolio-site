@@ -156,11 +156,11 @@ export const projects = [
     orientation: "vertical",
     caseStudy: {
       problem:
-        "House of Knifes had already filmed a promo for their warehouse sale, but it was a plain phone selfie video — a guy talking in the warehouse with a few logos and text slapped on top, no pacing, nothing that would make someone stop scrolling.",
+        "I came across House of Knifes' warehouse sale video while scrolling Instagram, and it stopped me for the wrong reason — the editing was flat and forgettable, just a few logos and captions slapped over a talking-head clip. Turns out the guy on camera is the actual owner, editing his own promos, which explains why the content itself was fine but the presentation wasn't doing it any favors.",
       research:
-        "I watched their existing video a few times to figure out what they actually needed to say — the sale, the discount, the categories on offer — then stripped that down to the handful of lines that mattered instead of the whole rambling clip.",
+        "Instead of reshooting anything, I looked at what he'd already filmed and thought about how kinetic typography — text that moves in sync with what's being said — could make the same message land harder without needing new footage. It's a technique built for exactly this kind of talking-head content, since it gives the eye something to follow beyond just a face on screen.",
       solution:
-        "Rebuilt it from scratch as a vertical, typography-led edit: sharp cuts, bold text reveals timed to the message, and a consistent visual rhythm instead of one static shot. Same information, but built to actually hold attention on Instagram and TikTok instead of just existing there.",
+        "I rebuilt the edit around kinetic type: pulled out the key lines — the sale, the discount, the categories — and animated them in rhythm with his voice instead of leaving them as static captions. Same video, same message, but built to actually stop someone mid-scroll instead of blending into the feed.",
       sections: [
         {
           title: "Before & After",
