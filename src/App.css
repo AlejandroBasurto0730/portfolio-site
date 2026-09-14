@@ -769,6 +769,23 @@ section {
   color: var(--text-muted);
 }
 
+.modal-live-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  background: var(--accent);
+  padding: 10px 20px;
+  border-radius: 980px;
+}
+
+.modal-live-link:hover {
+  background: var(--accent-dim);
+}
+
 .modal-process {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

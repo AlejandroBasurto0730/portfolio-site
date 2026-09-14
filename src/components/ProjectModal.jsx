@@ -20,7 +20,7 @@ export default function ProjectModal({ project, onClose }) {
 
   if (!project) return null;
   const { title, type, year, blurb, caseStudy } = project;
-  const { problem, solution, research } = caseStudy || {};
+  const { problem, solution, research, liveUrl } = caseStudy || {};
 
   return createPortal(
     <>
@@ -36,6 +36,11 @@ export default function ProjectModal({ project, onClose }) {
             </div>
             <h2 className="modal-title">{title}</h2>
             <p className="modal-blurb">{blurb}</p>
+            {liveUrl && (
+              <a className="modal-live-link" href={liveUrl} target="_blank" rel="noreferrer">
+                View live site ↗
+              </a>
+            )}
           </div>
 
           {(problem || solution || research) && (

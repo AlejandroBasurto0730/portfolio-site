@@ -6,6 +6,41 @@
 
 export const projects = [
   {
+    id: "prj_08",
+    code: "PRJ_00",
+    timecode: "00:00:12:04",
+    title: "Basher — Basurto Herrera Consultores",
+    type: "Web Design",
+    year: "2026",
+    category: "design",
+    blurb: "Bilingual website for a Mexican accounting and audit firm — built from scratch, no template.",
+    tags: ["Web Design", "Bilingual", "Branding"],
+    media: "/projects/basher-case-study/01-home.jpg",
+    mediaType: "image",
+    caseStudy: {
+      liveUrl: "/basher/index.html",
+      problem:
+        "My dad's accounting firm, Basurto Herrera Consultores, has over 30 years of experience but never had a website — new clients came entirely through referrals. In a field where people quietly research a firm online before ever picking up the phone, that's real credibility going unseen.",
+      research:
+        "Since this was for family, I could just ask directly instead of guessing at a brief: what actually sets the firm apart isn't more services than the big firms, it's that the lead partner is personally involved in every engagement instead of handing clients off to junior staff. I built the whole site around that one differentiator rather than the generic \"we do audits and taxes\" copy most accounting sites default to.",
+      solution:
+        "A bilingual (English/Spanish) site — home, about, services, careers, contact — built from scratch in HTML, CSS, and JavaScript, no template. Structured around 30+ years of experience, direct partner involvement, and specific industry expertise, designed to read as established and trustworthy rather than like a stock accounting-firm site.",
+      sections: [
+        {
+          title: "Pages",
+          images: [
+            { src: "/projects/basher-case-study/01-home.jpg", caption: "Home — leads with the firm's positioning and a direct look at the lead partner's involvement." },
+            { src: "/projects/basher-case-study/02-about.jpg", caption: "About — the firm's mission, vision, values, and sector experience." },
+            { src: "/projects/basher-case-study/03-services.jpg", caption: "Services — audit, tax compliance, and accounting advisory, laid out as an expandable list." },
+            { src: "/projects/basher-case-study/04-careers.jpg", caption: "Careers page for the firm's hiring." },
+            { src: "/projects/basher-case-study/05-contact.jpg", caption: "Contact — direct line to the partner, not a generic inbox." },
+          ],
+        },
+      ],
+    },
+    link: "",
+  },
+  {
     id: "prj_02",
     code: "PRJ_01",
     timecode: "00:01:08:03",
