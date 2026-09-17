@@ -37,10 +37,30 @@ export const projects = [
         {
           title: "Applications",
           images: [
-            { src: "/projects/candies-case-study/05-storefront-mockup.jpg", caption: "The awning and storefront glass, built around the same restraint as the logo." },
-            { src: "/projects/candies-case-study/06-individual-box.jpg", caption: "The 12cm individual box — closed, it reads almost entirely white." },
-            { src: "/projects/candies-case-study/07-large-box.jpg", caption: "The 20cm box for full cakes — the only piece that carries a ribbon." },
-            { src: "/projects/candies-case-study/08-diecut-large.jpg", caption: "Die-cut plan for the large box, ready to hand to a printer." },
+            { src: "/projects/candies-case-study/05-applications-grid.jpg", caption: "How the system holds across the box sizes, stamp, signage, menu, and business card." },
+            { src: "/projects/candies-case-study/06-storefront-mockup.jpg", caption: "The awning and storefront glass, built around the same restraint as the logo." },
+          ],
+        },
+        {
+          title: "Individual Box — 12cm",
+          images: [
+            { src: "/projects/candies-case-study/07-individual-armed.jpg", caption: "Closed, it reads almost entirely white — the brand stays quiet on purpose." },
+            { src: "/projects/candies-case-study/08-individual-diecut.jpg", caption: "Die-cut plan, ready to hand to a printer." },
+            { src: "/projects/candies-case-study/09-individual-specs.jpg", caption: "Print specifications — stock, ink, minimum sizes, and what never to do." },
+          ],
+        },
+        {
+          title: "Large Box — 20cm",
+          images: [
+            { src: "/projects/candies-case-study/10-large-armed.jpg", caption: "The only piece that carries a ribbon — reserved for full cakes." },
+            { src: "/projects/candies-case-study/11-large-diecut.jpg", caption: "Die-cut plan for the large box." },
+            { src: "/projects/candies-case-study/12-large-specs.jpg", caption: "Print specifications, including reinforcement for heavier cakes." },
+          ],
+        },
+        {
+          title: "Deliverables",
+          images: [
+            { src: "/projects/candies-case-study/13-closing.jpg", caption: "What was handed off: brand manual, packaging system, and logo files." },
           ],
         },
       ],
