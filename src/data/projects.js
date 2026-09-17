@@ -58,6 +58,15 @@ export const projects = [
           ],
         },
         {
+          title: "Papelería",
+          images: [
+            { src: "/projects/candies-case-study/papeleria-carta.jpg", caption: "The counter menu — A4, full price list organized by category." },
+            { src: "/projects/candies-case-study/papeleria-flyer.jpg", caption: "A neighborhood flyer for local delivery, built on the same grid as the menu." },
+            { src: "/projects/candies-case-study/papeleria-tarjeta-frente.jpg", caption: "Business card, front — 90×50mm." },
+            { src: "/projects/candies-case-study/papeleria-tarjeta-reverso.jpg", caption: "Business card, back — contact and order details." },
+          ],
+        },
+        {
           title: "Deliverables",
           images: [
             { src: "/projects/candies-case-study/13-closing.jpg", caption: "What was handed off: brand manual, packaging system, and logo files." },
