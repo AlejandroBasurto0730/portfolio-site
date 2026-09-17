@@ -6,6 +6,48 @@
 
 export const projects = [
   {
+    id: "prj_09",
+    code: "PRJ_00",
+    timecode: "00:00:06:02",
+    title: "Candies",
+    type: "Brand Identity",
+    year: "2026",
+    category: "design",
+    blurb: "Identity for my mom's home bakery in Cuajimalpa — same pink, different attitude.",
+    tags: ["Branding", "Packaging", "Typography"],
+    media: "/projects/candies-poster.jpg",
+    mediaType: "image",
+    caseStudy: {
+      problem:
+        "Candies has been baking out of the house since 2014, and already had a white-and-pink logo — but it read as childish and competed with the product itself. It needed to feel elegant without losing the pink the customers already recognize.",
+      research:
+        "Kept the pink and stripped weight from everything else: a light, widely-spaced Garamond, a single weight, and a fixed ratio across every piece — 70% white, 20% blush, 10% pink.",
+      solution:
+        "A system that holds up the same on a 20cm box, a 45mm stamp, and a storefront awning, and that lets the cake stay the most eye-catching part of the piece. In use since 2026 at the Francisco Villa 21 location.",
+      sections: [
+        {
+          title: "Brand Identity",
+          images: [
+            { src: "/projects/candies-case-study/01-logotype.jpg", caption: "The primary logotype, plus vertical, monogram, and negative variations." },
+            { src: "/projects/candies-case-study/02-color.jpg", caption: "Pink, blush, and bone — kept to a fixed 70/20/10 ratio across every piece." },
+            { src: "/projects/candies-case-study/03-typography.jpg", caption: "Cormorant Garamond for warmth, Jost for anything functional — both kept light." },
+            { src: "/projects/candies-case-study/04-voice.jpg", caption: "What the brand says and doesn't say, plus the tagline: \"Hecho en casa, desde 2014.\"" },
+          ],
+        },
+        {
+          title: "Applications",
+          images: [
+            { src: "/projects/candies-case-study/05-storefront-mockup.jpg", caption: "The awning and storefront glass, built around the same restraint as the logo." },
+            { src: "/projects/candies-case-study/06-individual-box.jpg", caption: "The 12cm individual box — closed, it reads almost entirely white." },
+            { src: "/projects/candies-case-study/07-large-box.jpg", caption: "The 20cm box for full cakes — the only piece that carries a ribbon." },
+            { src: "/projects/candies-case-study/08-diecut-large.jpg", caption: "Die-cut plan for the large box, ready to hand to a printer." },
+          ],
+        },
+      ],
+    },
+    link: "",
+  },
+  {
     id: "prj_08",
     code: "PRJ_00",
     timecode: "00:00:12:04",
