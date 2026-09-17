@@ -13,7 +13,7 @@ export const projects = [
     type: "Brand Identity",
     year: "2026",
     category: "design",
-    blurb: "Identity for my mom's home bakery in Cuajimalpa — same pink, different attitude.",
+    blurb: "Identity for a home bakery in Cuajimalpa, Mexico City — same pink, different attitude.",
     tags: ["Branding", "Packaging", "Typography"],
     media: "/projects/candies-poster.jpg",
     mediaType: "image",
@@ -62,9 +62,9 @@ export const projects = [
     caseStudy: {
       liveUrl: "/basher/index.html",
       problem:
-        "My dad's accounting firm, Basurto Herrera Consultores, has over 30 years of experience but never had a website — new clients came entirely through referrals. In a field where people quietly research a firm online before ever picking up the phone, that's real credibility going unseen.",
+        "Basurto Herrera Consultores, a Mexico City accounting and audit firm with over 30 years of experience, never had a website — new clients came entirely through referrals. In a field where people quietly research a firm online before ever picking up the phone, that's real credibility going unseen.",
       research:
-        "Since this was for family, I could just ask directly instead of guessing at a brief: what actually sets the firm apart isn't more services than the big firms, it's that the lead partner is personally involved in every engagement instead of handing clients off to junior staff. I built the whole site around that one differentiator rather than the generic \"we do audits and taxes\" copy most accounting sites default to.",
+        "I talked directly with the firm to figure out what actually sets it apart from bigger competitors: it isn't more services, it's that the lead partner is personally involved in every engagement instead of handing clients off to junior staff. I built the whole site around that one differentiator rather than the generic \"we do audits and taxes\" copy most accounting sites default to.",
       solution:
         "A bilingual (English/Spanish) site — home, about, services, careers, contact — built from scratch in HTML, CSS, and JavaScript, no template. Structured around 30+ years of experience, direct partner involvement, and specific industry expertise, designed to read as established and trustworthy rather than like a stock accounting-firm site.",
       sections: [
@@ -200,21 +200,6 @@ export const projects = [
     media: "/projects/now-media-reveal.mp4",
     mediaType: "video",
     poster: "/projects/now-media-poster.jpg",
-    link: "",
-  },
-  {
-    id: "prj_05",
-    code: "PRJ_04",
-    timecode: "00:03:47:02",
-    title: "Alex Buda",
-    type: "Motion Graphics",
-    year: "2026",
-    category: "motion",
-    blurb: "Retro-futurist title card with a synthwave skyline and layered type treatment.",
-    tags: ["Motion", "Title Card", "After Effects"],
-    media: "/projects/alex-buda-title.mp4",
-    mediaType: "video",
-    poster: "/projects/alex-buda-poster.jpg",
     link: "",
   },
   {
