@@ -57,7 +57,7 @@ export const projects = [
     category: "design",
     blurb: "Bilingual website for a Mexican accounting and audit firm — built from scratch, no template.",
     tags: ["Web Design", "Bilingual", "Branding"],
-    media: "/projects/basher-case-study/01-home.jpg",
+    media: "/projects/basher-poster.jpg",
     mediaType: "image",
     caseStudy: {
       liveUrl: "/basher/index.html",
