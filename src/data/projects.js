@@ -89,7 +89,7 @@ export const projects = [
     media: "/projects/basher-poster.jpg",
     mediaType: "image",
     caseStudy: {
-      liveUrl: "/basher/index.html",
+      liveUrl: "https://basher-website.vercel.app",
       problem:
         "Basurto Herrera Consultores, a Mexico City accounting and audit firm with over 30 years of experience, never had a website — new clients came entirely through referrals. In a field where people quietly research a firm online before ever picking up the phone, that's real credibility going unseen.",
       research:
