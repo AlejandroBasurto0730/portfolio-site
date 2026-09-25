@@ -28,48 +28,49 @@ export const projects = [
         {
           title: "Brand Identity",
           images: [
-            { src: "/projects/candies-case-study/01-logotype.jpg", caption: "The primary logotype, plus vertical, monogram, and negative variations." },
-            { src: "/projects/candies-case-study/02-color.jpg", caption: "Pink, blush, and bone — kept to a fixed 70/20/10 ratio across every piece." },
-            { src: "/projects/candies-case-study/03-typography.jpg", caption: "Cormorant Garamond for warmth, Jost for anything functional — both kept light." },
-            { src: "/projects/candies-case-study/04-voice.jpg", caption: "What the brand says and doesn't say, plus the tagline: \"Hecho en casa, desde 2014.\"" },
+            { src: "/projects/candies-case-study/identity-01-logotype.jpg", caption: "The primary logotype — a light, high-contrast Garamond with wide spacing and no ornament." },
+            { src: "/projects/candies-case-study/identity-02-versions.jpg", caption: "Primary, vertical, monogram, and negative versions for different placements." },
+            { src: "/projects/candies-case-study/identity-03-usage-rules.jpg", caption: "Clear space and minimum size — and what never to do to the mark." },
+            { src: "/projects/candies-case-study/identity-04-color.jpg", caption: "Pink, blush, bone, and cacao — kept to a fixed 70/20/10 ratio across every piece." },
+            { src: "/projects/candies-case-study/identity-05-typography.jpg", caption: "Cormorant Garamond for warmth, Jost for anything functional — both kept light." },
+            { src: "/projects/candies-case-study/identity-06-voice.jpg", caption: "What the brand says and doesn't say, plus the tagline: \"Hecho en casa, desde 2014.\"" },
+            { src: "/projects/candies-case-study/identity-07-applications-overview.jpg", caption: "How the system holds across box sizes, the stamp, signage, menu, and business card." },
           ],
         },
         {
-          title: "Applications",
+          title: "Storefront",
           images: [
-            { src: "/projects/candies-case-study/05-applications-grid.jpg", caption: "How the system holds across the box sizes, stamp, signage, menu, and business card." },
-            { src: "/projects/candies-case-study/06-storefront-mockup.jpg", caption: "The awning and storefront glass, built around the same restraint as the logo." },
+            { src: "/projects/candies-case-study/storefront-toldo-photo.jpg", caption: "The awning — a plain pink canopy, logo and lema in white, nothing else competing for attention." },
           ],
         },
         {
           title: "Individual Box — 12cm",
           images: [
-            { src: "/projects/candies-case-study/07-individual-armed.jpg", caption: "Closed, it reads almost entirely white — the brand stays quiet on purpose." },
-            { src: "/projects/candies-case-study/08-individual-diecut.jpg", caption: "Die-cut plan, ready to hand to a printer." },
-            { src: "/projects/candies-case-study/09-individual-specs.jpg", caption: "Print specifications — stock, ink, minimum sizes, and what never to do." },
+            { src: "/projects/candies-case-study/individual-01-box-render.jpg", caption: "Closed, it reads almost entirely white — the brand stays quiet on purpose." },
+            { src: "/projects/candies-case-study/individual-02-diecut.jpg", caption: "Die-cut plan, ready to hand to a printer." },
+            { src: "/projects/candies-case-study/individual-03-specs.jpg", caption: "Print specifications — stock, ink, minimum sizes, and what never to do." },
           ],
         },
         {
           title: "Large Box — 20cm",
           images: [
-            { src: "/projects/candies-case-study/10-large-armed.jpg", caption: "The only piece that carries a ribbon — reserved for full cakes." },
-            { src: "/projects/candies-case-study/11-large-diecut.jpg", caption: "Die-cut plan for the large box." },
-            { src: "/projects/candies-case-study/12-large-specs.jpg", caption: "Print specifications, including reinforcement for heavier cakes." },
+            { src: "/projects/candies-case-study/large-01-box-render.jpg", caption: "The only piece that carries a ribbon — reserved for full cakes." },
+            { src: "/projects/candies-case-study/large-02-diecut.jpg", caption: "Die-cut plan for the large box." },
+            { src: "/projects/candies-case-study/large-03-specs.jpg", caption: "Print specifications, including reinforcement for heavier cakes." },
           ],
         },
         {
           title: "Papelería",
           images: [
-            { src: "/projects/candies-case-study/papeleria-carta.jpg", caption: "The counter menu — A4, full price list organized by category." },
-            { src: "/projects/candies-case-study/papeleria-flyer.jpg", caption: "A neighborhood flyer for local delivery, built on the same grid as the menu." },
-            { src: "/projects/candies-case-study/papeleria-tarjeta-frente.jpg", caption: "Business card, front — 90×50mm." },
-            { src: "/projects/candies-case-study/papeleria-tarjeta-reverso.jpg", caption: "Business card, back — contact and order details." },
+            { src: "/projects/candies-case-study/papeleria-carta-photo.jpg", caption: "The counter menu, shot on-site — full price list organized by category." },
+            { src: "/projects/candies-case-study/papeleria-flyer-photo.jpg", caption: "A neighborhood flyer for local delivery, built on the same grid as the menu." },
+            { src: "/projects/candies-case-study/papeleria-tarjeta-photo.jpg", caption: "The business card, front and back — 90×50mm." },
           ],
         },
         {
           title: "Deliverables",
           images: [
-            { src: "/projects/candies-case-study/13-closing.jpg", caption: "What was handed off: brand manual, packaging system, and logo files." },
+            { src: "/projects/candies-case-study/closing-deliverables.jpg", caption: "What was handed off: brand manual, packaging system, papelería, and logo files." },
           ],
         },
       ],
