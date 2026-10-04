@@ -30,11 +30,11 @@ export default function Hero() {
             {moveLetters.map((letter, i) => (
               <span
                 key={i}
-                className="walk-letter"
+                className={`walk-letter ${letter === " " ? "walk-space" : ""}`}
                 style={{ animationDelay: `${i * 0.1}s` }}
                 aria-hidden="true"
               >
-                {letter}
+                {letter === " " ? "\u00A0" : letter}
               </span>
             ))}
           </span>
