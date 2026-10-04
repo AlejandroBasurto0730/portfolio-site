@@ -1,13 +1,17 @@
 import { useEffect, useRef, useState } from "react";
 import { projects } from "../data/projects";
 import ProjectModal from "./ProjectModal";
+import { useLanguage } from "../LanguageContext";
+import { t } from "../i18n";
 
-const MOVES_LETTERS = "MOVES".split("");
 const featured = projects.find((p) => p.id === "prj_03");
 
 export default function Hero() {
   const videoRef = useRef(null);
   const [showCaseStudy, setShowCaseStudy] = useState(false);
+  const { lang } = useLanguage();
+  const hero = t[lang].hero;
+  const moveLetters = hero.moves.split("");
 
   useEffect(() => {
     const el = videoRef.current;
@@ -18,11 +22,11 @@ export default function Hero() {
   return (
     <section id="hero" className="hero">
       <div className="container hero-inner">
-        <div className="hero-eyebrow">Brand and motion design — Vancouver, BC</div>
+        <div className="hero-eyebrow">{hero.eyebrow}</div>
         <h1 className="hero-title">
-          Design that{" "}
-          <span className="hero-title-walk" aria-label="MOVES">
-            {MOVES_LETTERS.map((letter, i) => (
+          {hero.titlePrefix}{" "}
+          <span className="hero-title-walk" aria-label={hero.moves}>
+            {moveLetters.map((letter, i) => (
               <span
                 key={i}
                 className="walk-letter"
@@ -35,16 +39,13 @@ export default function Hero() {
           </span>
           .
         </h1>
-        <p className="hero-sub">
-          Alejandro Basurto — building brand identity systems and motion
-          graphics that hold up in print, on screen, and in motion.
-        </p>
+        <p className="hero-sub">{hero.sub}</p>
         <div className="hero-actions">
           <a href="#work" className="btn btn-primary">
-            View work
+            {hero.viewWork}
           </a>
           <a href="#contact" className="btn btn-ghost">
-            Get in touch
+            {hero.getInTouch}
           </a>
         </div>
       </div>
@@ -53,7 +54,7 @@ export default function Hero() {
         <button
           className="hero-visual-frame"
           onClick={() => setShowCaseStudy(true)}
-          aria-label={`View featured project: ${featured.title}`}
+          aria-label={`${hero.featured}: ${featured.title}`}
         >
           <video
             ref={videoRef}
@@ -65,7 +66,9 @@ export default function Hero() {
             playsInline
             preload="auto"
           />
-          <span className="hero-visual-label">Featured project — {featured.title}</span>
+          <span className="hero-visual-label">
+            {hero.featured} — {featured.title}
+          </span>
         </button>
       </div>
 

@@ -1,15 +1,18 @@
 import { useEffect, useState } from "react";
-
-const LABELS = {
-  hero: "Home",
-  work: "Work",
-  about: "About",
-  skills: "Skills",
-  contact: "Contact",
-};
+import { useLanguage } from "../LanguageContext";
+import { t } from "../i18n";
 
 export default function Nav({ active, sections }) {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { lang, toggleLang } = useLanguage();
+  const nav = t[lang].nav;
+
+  const LABELS = {
+    work: nav.work,
+    about: nav.about,
+    skills: nav.skills,
+    contact: nav.contact,
+  };
 
   const scrollTo = (id) => {
     setMobileOpen(false);
@@ -43,8 +46,11 @@ export default function Nav({ active, sections }) {
             </button>
           ))}
           <a className="nav-resume" href="/resume/Alejandro_Basurto_Resume.pdf" download>
-            Resume
+            {nav.resume}
           </a>
+          <button className="nav-lang" onClick={toggleLang} aria-label="Switch language">
+            {lang === "en" ? "ES" : "EN"}
+          </button>
         </nav>
 
         <button
@@ -75,8 +81,17 @@ export default function Nav({ active, sections }) {
           download
           onClick={() => setMobileOpen(false)}
         >
-          Download Resume
+          {nav.resumeDownload}
         </a>
+        <button
+          className="nav-mobile-lang"
+          onClick={() => {
+            toggleLang();
+            setMobileOpen(false);
+          }}
+        >
+          {lang === "en" ? "Español" : "English"}
+        </button>
       </div>
     </header>
   );

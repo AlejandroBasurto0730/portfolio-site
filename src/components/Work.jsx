@@ -4,20 +4,24 @@ import ProjectCard from "./ProjectCard";
 import SectionHead from "./SectionHead";
 import ProjectModal from "./ProjectModal";
 import VideoLightbox from "./VideoLightbox";
-
-const GROUPS = [
-  { key: "design", label: "Design" },
-  { key: "motion", label: "Motion Graphics" },
-];
+import { useLanguage } from "../LanguageContext";
+import { t } from "../i18n";
 
 export default function Work() {
   const [openProject, setOpenProject] = useState(null);
   const [lightboxProject, setLightboxProject] = useState(null);
+  const { lang } = useLanguage();
+  const work = t[lang].work;
+
+  const GROUPS = [
+    { key: "design", label: work.design },
+    { key: "motion", label: work.motion },
+  ];
 
   return (
     <section id="work" className="work">
       <div className="container">
-        <SectionHead title="Selected work" subtitle="A few projects, spanning brand and motion." />
+        <SectionHead title={work.title} subtitle={work.subtitle} />
 
         {GROUPS.map((group) => {
           const items = projects.filter((p) => p.category === group.key);

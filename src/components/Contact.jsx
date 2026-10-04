@@ -1,12 +1,18 @@
 import { useReveal } from "../hooks/useReveal";
 import SectionHead from "./SectionHead";
+import { useLanguage } from "../LanguageContext";
+import { t } from "../i18n";
 
 export default function Contact() {
   const [ref, visible] = useReveal();
+  const { lang } = useLanguage();
+  const contact = t[lang].contact;
+  const nav = t[lang].nav;
+
   return (
     <section id="contact" className="contact">
       <div className="container">
-        <SectionHead title="Contact" />
+        <SectionHead title={contact.title} />
 
         <div ref={ref} className={`contact-body ${visible ? "is-visible" : ""}`}>
           <a href="mailto:alejandrobasurto0730@gmail.com" className="contact-email">
@@ -23,7 +29,7 @@ export default function Contact() {
             href="/resume/Alejandro_Basurto_Resume.pdf"
             download
           >
-            Download Resume
+            {nav.resumeDownload}
           </a>
         </div>
 

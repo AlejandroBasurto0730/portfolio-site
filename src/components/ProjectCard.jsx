@@ -1,10 +1,14 @@
 import { useEffect, useRef } from "react";
 import { useReveal } from "../hooks/useReveal";
 import { requestPlay, releasePlay } from "../videoPlaybackManager";
+import { useLanguage } from "../LanguageContext";
+import { t } from "../i18n";
 
 export default function ProjectCard({ project, index, onOpen, onEnlarge, isOpen }) {
   const { title, type, year, blurb, media, mediaType, poster, isPlaceholder, orientation, link } = project;
   const [ref, visible] = useReveal();
+  const { lang } = useLanguage();
+  const work = t[lang].work;
   const videoRef = useRef(null);
   const frameRef = useRef(null);
 
@@ -113,7 +117,7 @@ export default function ProjectCard({ project, index, onOpen, onEnlarge, isOpen 
         </div>
         <div className="project-type">{type}</div>
         <p className="project-blurb">{blurb}</p>
-        {onOpen && <span className="project-view-link">View full project →</span>}
+        {onOpen && <span className="project-view-link">{work.viewFullProject}</span>}
       </div>
     </>
   );

@@ -2,9 +2,13 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import ImageLightbox from "./ImageLightbox";
 import VideoLightbox from "./VideoLightbox";
+import { useLanguage } from "../LanguageContext";
+import { t } from "../i18n";
 
 export default function ProjectModal({ project, onClose }) {
   const [zoomed, setZoomed] = useState(null); // { type, src, poster, orientation }
+  const { lang } = useLanguage();
+  const modal = t[lang].modal;
 
   useEffect(() => {
     const onKey = (e) => {
@@ -38,7 +42,7 @@ export default function ProjectModal({ project, onClose }) {
             <p className="modal-blurb">{blurb}</p>
             {liveUrl && (
               <a className="modal-live-link" href={liveUrl} target="_blank" rel="noreferrer">
-                View live site ↗
+                {modal.viewLiveSite}
               </a>
             )}
           </div>
@@ -47,19 +51,19 @@ export default function ProjectModal({ project, onClose }) {
             <div className="modal-process">
               {problem && (
                 <div className="modal-process-block">
-                  <h3 className="modal-process-label">The Problem</h3>
+                  <h3 className="modal-process-label">{modal.problem}</h3>
                   <p className="modal-process-text">{problem}</p>
                 </div>
               )}
               {research && (
                 <div className="modal-process-block">
-                  <h3 className="modal-process-label">Research</h3>
+                  <h3 className="modal-process-label">{modal.research}</h3>
                   <p className="modal-process-text">{research}</p>
                 </div>
               )}
               {solution && (
                 <div className="modal-process-block">
-                  <h3 className="modal-process-label">The Solution</h3>
+                  <h3 className="modal-process-label">{modal.solution}</h3>
                   <p className="modal-process-text">{solution}</p>
                 </div>
               )}

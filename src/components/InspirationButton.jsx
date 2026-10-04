@@ -1,9 +1,13 @@
 import { useRef, useState } from "react";
 import { quotes } from "../data/quotes";
+import { useLanguage } from "../LanguageContext";
+import { t } from "../i18n";
 
 export default function InspirationButton() {
   const [quote, setQuote] = useState(null);
   const lastIndex = useRef(-1);
+  const { lang } = useLanguage();
+  const insp = t[lang].inspiration;
 
   const pickQuote = () => {
     let i = Math.floor(Math.random() * quotes.length);
@@ -21,7 +25,7 @@ export default function InspirationButton() {
           <button
             className="inspiration-close"
             onClick={() => setQuote(null)}
-            aria-label="Close"
+            aria-label={insp.close}
           >
             ✕
           </button>
@@ -30,7 +34,7 @@ export default function InspirationButton() {
         </div>
       )}
       <button className="inspiration-button" onClick={pickQuote}>
-        Inspire me
+        {insp.button}
       </button>
     </div>
   );
