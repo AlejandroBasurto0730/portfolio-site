@@ -82,24 +82,64 @@ export const projects = [
     code: "PRJ_00",
     timecode: "00:00:12:04",
     title: "Basher — Basurto Herrera Consultores",
-    type: "Web Design",
+    type: "Brand Identity & Web Design",
     year: "2026",
     category: "design",
-    blurb: "Bilingual website for a Mexican accounting and audit firm — built from scratch, no template.",
-    tags: ["Web Design", "Bilingual", "Branding"],
+    blurb: "Full brand identity and bilingual website for a Mexican accounting and audit firm — built from scratch, no template.",
+    tags: ["Brand Identity", "Web Design", "Bilingual"],
     media: "/projects/basher-poster.jpg",
     mediaType: "image",
     caseStudy: {
       liveUrl: "https://basher.mx/",
       problem:
-        "Basurto Herrera Consultores, a Mexico City accounting and audit firm with over 30 years of experience, never had a website — new clients came entirely through referrals. In a field where people quietly research a firm online before ever picking up the phone, that's real credibility going unseen.",
+        "Basurto Herrera Consultores, a Mexico City accounting and audit firm with over 30 years of experience, never had a visual identity or a website — new clients came entirely through referrals. In a field where people quietly research a firm online before ever picking up the phone, that's real credibility going unseen.",
       research:
-        "I talked directly with the firm to figure out what actually sets it apart from bigger competitors: it isn't more services, it's that the lead partner is personally involved in every engagement instead of handing clients off to junior staff. I built the whole site around that one differentiator rather than the generic \"we do audits and taxes\" copy most accounting sites default to.",
+        "I talked directly with the firm to figure out what actually sets it apart from bigger competitors: it isn't more services, it's that the lead partner is personally involved in every engagement instead of handing clients off to junior staff. The symbol I landed on reflects that directly — two faceted planes (structure and rigor) protecting a single point (the exact figure, the precise decision).",
       solution:
-        "A bilingual (English/Spanish) site — home, about, services, careers, contact — built from scratch in HTML, CSS, and JavaScript, no template. Structured around 30+ years of experience, direct partner involvement, and specific industry expertise, designed to read as established and trustworthy rather than like a stock accounting-firm site.",
+        "A full identity system — logo, color, typography, stationery, signage, and presentation templates — plus a bilingual (English/Spanish) site built from scratch in HTML, CSS, and JavaScript, no template. Everything built around 30+ years of experience and direct partner involvement, designed to read as established and trustworthy rather than like a stock accounting-firm brand.",
       sections: [
         {
-          title: "Pages",
+          title: "Brand Strategy",
+          images: [
+            { src: "/projects/basher-identity/strategy-01-firm-mission-vision.jpg", caption: "The firm, mission, and vision — what I built the rest of the identity around." },
+            { src: "/projects/basher-identity/strategy-02-symbol-concept.jpg", caption: "The symbol's logic: faceted planes for structure, a single point for the exact figure that matters." },
+          ],
+        },
+        {
+          title: "Logo System",
+          images: [
+            { src: "/projects/basher-identity/logo-01-construction-grid.jpg", caption: "Construction grid — how the mark is actually built, not just drawn." },
+            { src: "/projects/basher-identity/logo-02-primary.jpg", caption: "The primary logotype." },
+            { src: "/projects/basher-identity/logo-03-clear-space.jpg", caption: "Minimum clear space, keyed to the symbol's own dot." },
+            { src: "/projects/basher-identity/logo-04-negative-icon.jpg", caption: "Negative version and the standalone app icon." },
+          ],
+        },
+        {
+          title: "Color & Typography",
+          images: [
+            { src: "/projects/basher-identity/identity-01-color.jpg", caption: "Basher Blue, Mist Blue, Basher Black, and Deep Blue — with full CMYK/RGB/hex specs." },
+            { src: "/projects/basher-identity/identity-02-typography.jpg", caption: "Plus Jakarta Sans across every weight the brand actually uses." },
+            { src: "/projects/basher-identity/identity-03-pattern-message.jpg", caption: "A pattern built from the symbol, paired with the line that sums up the firm: \"Sus cifras, revisadas por quien firma.\"" },
+          ],
+        },
+        {
+          title: "Stationery",
+          images: [
+            { src: "/projects/basher-identity/stationery-01-business-card.jpg", caption: "Business card, front and back." },
+            { src: "/projects/basher-identity/stationery-02-envelope.jpg", caption: "Envelope, using the pattern as a restrained accent instead of covering the whole piece." },
+          ],
+        },
+        {
+          title: "Applications",
+          images: [
+            { src: "/projects/basher-identity/applications-01-billboard.jpg", caption: "Billboard concept — \"Certeza fiscal. Sin intermediarios. Directo con el socio.\"" },
+            { src: "/projects/basher-identity/applications-02-signage.jpg", caption: "Exterior signage mockup." },
+            { src: "/projects/basher-identity/applications-03-presentation.jpg", caption: "A presentation template, built for the firm's own seminars and client talks." },
+            { src: "/projects/basher-identity/applications-04-laptop.jpg", caption: "The identity carried straight into the website itself." },
+          ],
+        },
+        {
+          title: "Website Pages",
           images: [
             { src: "/projects/basher-case-study/01-home.jpg", caption: "Home — leads with the firm's positioning and a direct look at the lead partner's involvement." },
             { src: "/projects/basher-case-study/02-about.jpg", caption: "About — the firm's mission, vision, values, and sector experience." },
