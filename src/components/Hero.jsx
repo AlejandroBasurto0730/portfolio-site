@@ -2,9 +2,9 @@ import { useEffect, useRef, useState } from "react";
 import { projects } from "../data/projects";
 import ProjectModal from "./ProjectModal";
 import { useLanguage } from "../LanguageContext";
-import { t } from "../i18n";
+import { t, localizeProject } from "../i18n";
 
-const featured = projects.find((p) => p.id === "prj_03");
+const featuredBase = projects.find((p) => p.id === "prj_03");
 
 export default function Hero() {
   const videoRef = useRef(null);
@@ -12,6 +12,7 @@ export default function Hero() {
   const { lang } = useLanguage();
   const hero = t[lang].hero;
   const moveLetters = hero.moves.split("");
+  const featured = localizeProject(featuredBase, lang);
 
   useEffect(() => {
     const el = videoRef.current;

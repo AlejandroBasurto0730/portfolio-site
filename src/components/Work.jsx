@@ -5,7 +5,7 @@ import SectionHead from "./SectionHead";
 import ProjectModal from "./ProjectModal";
 import VideoLightbox from "./VideoLightbox";
 import { useLanguage } from "../LanguageContext";
-import { t } from "../i18n";
+import { t, localizeProject } from "../i18n";
 
 export default function Work() {
   const [openProject, setOpenProject] = useState(null);
@@ -24,7 +24,9 @@ export default function Work() {
         <SectionHead title={work.title} subtitle={work.subtitle} />
 
         {GROUPS.map((group) => {
-          const items = projects.filter((p) => p.category === group.key);
+          const items = projects
+            .filter((p) => p.category === group.key)
+            .map((p) => localizeProject(p, lang));
           if (items.length === 0) return null;
 
           return (

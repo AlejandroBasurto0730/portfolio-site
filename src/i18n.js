@@ -1,3 +1,44 @@
+import { projectsEs } from "./data/projects_es";
+
+// Merges a project's English base data with its Spanish translation (if any)
+// when lang === "es". Falls back to English for any field without a
+// translation, so a partial/missing entry never breaks the page.
+export function localizeProject(project, lang) {
+  if (lang !== "es") return project;
+  const tr = projectsEs[project.id];
+  if (!tr) return project;
+
+  const merged = { ...project };
+  if (tr.type) merged.type = tr.type;
+  if (tr.blurb) merged.blurb = tr.blurb;
+  if (tr.tags) merged.tags = tr.tags;
+
+  if (project.caseStudy && tr.caseStudy) {
+    merged.caseStudy = {
+      ...project.caseStudy,
+      problem: tr.caseStudy.problem ?? project.caseStudy.problem,
+      research: tr.caseStudy.research ?? project.caseStudy.research,
+      solution: tr.caseStudy.solution ?? project.caseStudy.solution,
+      sections: project.caseStudy.sections.map((sec, si) => {
+        const trSec = tr.caseStudy.sections?.[si];
+        if (!trSec) return sec;
+        return {
+          ...sec,
+          title: trSec.title ?? sec.title,
+          images: sec.images.map((img, ii) => {
+            const capEs = trSec.images?.[ii];
+            if (!capEs) return img;
+            if (typeof img === "string") return img;
+            return { ...img, caption: capEs };
+          }),
+        };
+      }),
+    };
+  }
+
+  return merged;
+}
+
 export const t = {
   en: {
     nav: {
