@@ -474,12 +474,16 @@ section {
   position: absolute;
   bottom: 16px;
   left: 20px;
+  right: 20px;
+  max-width: calc(100% - 40px);
+  width: fit-content;
   font-size: 13px;
   font-weight: 400;
   color: #fff;
   background: rgba(0, 0, 0, 0.45);
   padding: 6px 14px;
   border-radius: 980px;
+  box-sizing: border-box;
 }
 
 /* ── Work grid ─────────────────────────────────────────────── */
