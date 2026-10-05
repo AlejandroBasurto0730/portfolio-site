@@ -5,7 +5,7 @@ import { useLanguage } from "../LanguageContext";
 import { t } from "../i18n";
 
 // Replace with your Formspree endpoint, e.g. "https://formspree.io/f/xxxxxxxx"
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/REPLACE_ME";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xppqaggw";
 
 export default function Contact() {
   const [ref, visible] = useReveal();
