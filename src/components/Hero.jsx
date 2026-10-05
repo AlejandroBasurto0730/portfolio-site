@@ -4,7 +4,7 @@ import ProjectModal from "./ProjectModal";
 import { useLanguage } from "../LanguageContext";
 import { t, localizeProject } from "../i18n";
 
-const featuredBase = projects.find((p) => p.id === "prj_03");
+const featuredBase = projects.find((p) => p.id === "prj_08");
 
 export default function Hero() {
   const videoRef = useRef(null);
@@ -16,9 +16,9 @@ export default function Hero() {
 
   useEffect(() => {
     const el = videoRef.current;
-    if (!el) return;
+    if (!el || featured.mediaType !== "video") return;
     el.play().catch(() => {});
-  }, []);
+  }, [featured.mediaType]);
 
   return (
     <section id="hero" className="hero">
@@ -57,16 +57,20 @@ export default function Hero() {
           onClick={() => setShowCaseStudy(true)}
           aria-label={`${hero.featured}: ${featured.title}`}
         >
-          <video
-            ref={videoRef}
-            className="hero-visual-video"
-            src={featured.media}
-            poster={featured.poster}
-            muted
-            loop
-            playsInline
-            preload="auto"
-          />
+          {featured.mediaType === "video" ? (
+            <video
+              ref={videoRef}
+              className="hero-visual-video"
+              src={featured.media}
+              poster={featured.poster}
+              muted
+              loop
+              playsInline
+              preload="auto"
+            />
+          ) : (
+            <img className="hero-visual-video" src={featured.media} alt={featured.title} />
+          )}
           <span className="hero-visual-label">
             {hero.featured} — {featured.title}
           </span>
