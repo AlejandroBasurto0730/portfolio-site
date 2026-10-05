@@ -84,6 +84,13 @@ export const t = {
     },
     contact: {
       title: "Contact",
+      formName: "Name",
+      formEmail: "Email",
+      formMessage: "Message",
+      formSend: "Send message",
+      formSending: "Sending…",
+      formSuccess: "Thanks — your message is in. I'll get back to you soon.",
+      formError: "Something went wrong. Try again, or email me directly.",
     },
     modal: {
       problem: "The Problem",
@@ -140,6 +147,13 @@ export const t = {
     },
     contact: {
       title: "Contacto",
+      formName: "Nombre",
+      formEmail: "Correo",
+      formMessage: "Mensaje",
+      formSend: "Enviar mensaje",
+      formSending: "Enviando…",
+      formSuccess: "Gracias — tu mensaje ya llegó. Te respondo pronto.",
+      formError: "Algo salió mal. Intenta de nuevo, o escríbeme directo por correo.",
     },
     modal: {
       problem: "El Problema",

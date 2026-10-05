@@ -1046,12 +1046,15 @@ section {
 
 .contact-email {
   display: inline-block;
+  max-width: 100%;
   font-family: var(--font-display);
   font-weight: 300;
-  font-size: clamp(28px, 5vw, 46px);
+  font-size: clamp(20px, 5.5vw, 46px);
   letter-spacing: -0.02em;
   color: var(--accent);
   margin-bottom: 20px;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .contact-links {
@@ -1082,6 +1085,98 @@ section {
 .contact-resume-btn:hover {
   border-color: var(--accent);
   color: var(--accent);
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 520px;
+  margin: 48px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-align: left;
+}
+
+.contact-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+@media (max-width: 560px) {
+  .contact-form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-field label {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.contact-field input,
+.contact-field textarea {
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  transition: border-color 0.2s ease;
+  resize: vertical;
+}
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.contact-form-submit {
+  align-self: center;
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background: var(--accent);
+  padding: 13px 32px;
+  border-radius: 980px;
+  transition: background 0.2s ease, opacity 0.2s ease;
+}
+
+.contact-form-submit:hover {
+  background: var(--accent-dim);
+}
+
+.contact-form-submit:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.contact-form-status {
+  text-align: center;
+  font-size: 13px;
+  margin-top: -4px;
+}
+
+.contact-form-status.is-success {
+  color: #1a8a4a;
+}
+
+.contact-form-status.is-error {
+  color: #c0392b;
 }
 
 .contact-footer {
