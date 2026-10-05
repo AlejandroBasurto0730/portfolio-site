@@ -58,23 +58,30 @@ export default function Hero() {
           aria-label={`${hero.featured}: ${featured.title}`}
         >
           {featured.mediaType === "video" ? (
-            <video
-              ref={videoRef}
-              className="hero-visual-video"
-              src={featured.media}
-              poster={featured.poster}
-              muted
-              loop
-              playsInline
-              preload="auto"
-            />
+            <>
+              <video
+                ref={videoRef}
+                className="hero-visual-video"
+                src={featured.media}
+                poster={featured.poster}
+                muted
+                loop
+                playsInline
+                preload="auto"
+              />
+              <span className="hero-visual-label">
+                {hero.featured} — {featured.title}
+              </span>
+            </>
           ) : (
             <img className="hero-visual-video" src={featured.media} alt={featured.title} />
           )}
-          <span className="hero-visual-label">
-            {hero.featured} — {featured.title}
-          </span>
         </button>
+        {featured.mediaType !== "video" && (
+          <p className="hero-visual-caption">
+            {hero.featured} — {featured.title}
+          </p>
+        )}
       </div>
 
       {showCaseStudy && (

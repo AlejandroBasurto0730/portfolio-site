@@ -470,6 +470,14 @@ section {
   display: block;
 }
 
+.hero-visual-caption {
+  margin-top: 14px;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-faint);
+  text-align: center;
+}
+
 .hero-visual-label {
   position: absolute;
   bottom: 16px;
