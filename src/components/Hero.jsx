@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import { projects } from "../data/projects";
+import { projects, FEATURED_PROJECT_ID } from "../data/projects";
 import ProjectModal from "./ProjectModal";
 import { useLanguage } from "../LanguageContext";
 import { t, localizeProject } from "../i18n";
 
-const featuredBase = projects.find((p) => p.id === "prj_08");
+const featuredBase = projects.find((p) => p.id === FEATURED_PROJECT_ID);
 
 export default function Hero() {
   const videoRef = useRef(null);

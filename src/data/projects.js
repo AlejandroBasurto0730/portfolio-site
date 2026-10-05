@@ -4,6 +4,11 @@
 // give it a new id, and drop your media file into /public/projects/
 // ─────────────────────────────────────────────────────────────
 
+// The project shown in the Hero as "Featured project". It's excluded
+// from the Selected Work grid below so it doesn't appear twice —
+// change this id to feature a different project.
+export const FEATURED_PROJECT_ID = "prj_08";
+
 export const projects = [
   {
     id: "prj_09",
