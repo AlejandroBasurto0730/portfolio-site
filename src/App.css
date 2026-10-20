@@ -478,11 +478,12 @@ section {
   border: none;
   padding: 0;
   cursor: pointer;
-  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transform: translate3d(0, var(--par, 0px), 0);
+  transition: translate 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .hero-visual-frame:hover {
-  transform: translateY(-4px);
+  translate: 0 -4px;
 }
 
 .hero-visual-video {
@@ -775,6 +776,10 @@ section {
   align-items: flex-start;
   padding: 40px 20px;
   overflow-y: auto;
+}
+
+.modal-panel.no-rise {
+  animation: none;
 }
 
 .modal-panel {

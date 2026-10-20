@@ -10,6 +10,8 @@ const featuredBase = projects.find((p) => p.id === FEATURED_PROJECT_ID);
 export default function Hero() {
   const videoRef = useRef(null);
   const [showCaseStudy, setShowCaseStudy] = useState(false);
+  const frameRef = useRef(null);
+  const originRef = useRef(null);
   const { lang } = useLanguage();
   const hero = t[lang].hero;
   const featured = localizeProject(featuredBase, lang);
@@ -24,6 +26,26 @@ export default function Hero() {
     io.observe(el);
     return () => io.disconnect();
   }, [featured.mediaType]);
+
+  // Gentle parallax: the featured frame drifts slower than the page.
+  useEffect(() => {
+    const el = frameRef.current;
+    if (!el || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return undefined;
+    let raf = 0;
+    const tick = () => {
+      raf = 0;
+      const y = Math.min(window.scrollY, 900);
+      el.style.setProperty("--par", `${(y * 0.12).toFixed(1)}px`);
+    };
+    const onScroll = () => {
+      if (!raf) raf = requestAnimationFrame(tick);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      if (raf) cancelAnimationFrame(raf);
+    };
+  }, []);
 
   return (
     <section id="hero" className="hero">
@@ -46,8 +68,12 @@ export default function Hero() {
 
       <div className="hero-visual container">
         <button
+          ref={frameRef}
           className="hero-visual-frame"
-          onClick={() => setShowCaseStudy(true)}
+          onClick={() => {
+            originRef.current = frameRef.current?.getBoundingClientRect() ?? null;
+            setShowCaseStudy(true);
+          }}
           aria-label={`${hero.featured}: ${featured.title}`}
         >
           {featured.mediaType === "video" ? (
@@ -78,7 +104,7 @@ export default function Hero() {
       </div>
 
       {showCaseStudy && (
-        <ProjectModal project={featured} onClose={() => setShowCaseStudy(false)} />
+        <ProjectModal project={featured} origin={originRef.current} onClose={() => setShowCaseStudy(false)} />
       )}
     </section>
   );

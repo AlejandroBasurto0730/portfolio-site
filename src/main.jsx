@@ -1,5 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import '@fontsource-variable/bricolage-grotesque/index.css'
+import '@fontsource-variable/instrument-sans/index.css'
+import '@fontsource/fragment-mono/400.css'
+import '@fontsource/fredoka/600.css'
+import '@fontsource/fredoka/700.css'
 import './index.css'
 import App from './App.jsx'
 

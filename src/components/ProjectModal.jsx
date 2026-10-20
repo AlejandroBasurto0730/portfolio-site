@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import ImageLightbox from "./ImageLightbox";
 import VideoLightbox from "./VideoLightbox";
@@ -17,10 +17,31 @@ function Gallery({ compare, count, label, children }) {
   );
 }
 
-export default function ProjectModal({ project, onClose }) {
+export default function ProjectModal({ project, onClose, origin }) {
+  const panelRef = useRef(null);
   const [zoomed, setZoomed] = useState(null); // { type, src, poster, orientation }
   const { lang } = useLanguage();
   const modal = t[lang].modal;
+
+  // The card the person tapped "opens up" into the panel: the panel is
+  // revealed through a clip that starts exactly on the card's rectangle.
+  useLayoutEffect(() => {
+    const panel = panelRef.current;
+    if (!panel || !origin || !panel.animate) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const r = panel.getBoundingClientRect();
+    const top = Math.max(0, origin.top - r.top);
+    const left = Math.max(0, origin.left - r.left);
+    const right = Math.max(0, r.right - origin.right);
+    const bottom = Math.max(0, r.bottom - origin.bottom);
+    panel.animate(
+      [
+        { clipPath: `inset(${top}px ${right}px ${bottom}px ${left}px round 16px)`, opacity: 0.6 },
+        { clipPath: "inset(0px 0px 0px 0px round 20px)", opacity: 1 },
+      ],
+      { duration: 620, easing: "cubic-bezier(0.22, 1, 0.36, 1)" }
+    );
+  }, [origin]);
 
   useEffect(() => {
     const onKey = (e) => {
@@ -41,7 +62,7 @@ export default function ProjectModal({ project, onClose }) {
   return createPortal(
     <>
       <div className="modal-backdrop" onClick={onClose}>
-        <div className="modal-panel" onClick={(e) => e.stopPropagation()}>
+        <div ref={panelRef} className={`modal-panel ${origin ? "no-rise" : ""}`} onClick={(e) => e.stopPropagation()}>
           <button className="modal-close" onClick={onClose} aria-label="Close">
             ✕
           </button>

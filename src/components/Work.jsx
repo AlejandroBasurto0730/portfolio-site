@@ -10,6 +10,7 @@ import { t, localizeProject } from "../i18n";
 
 export default function Work() {
   const [openProject, setOpenProject] = useState(null);
+  const [origin, setOrigin] = useState(null);
   const [lightboxProject, setLightboxProject] = useState(null);
   const { lang } = useLanguage();
   const work = t[lang].work;
@@ -39,7 +40,14 @@ export default function Work() {
                     key={p.id}
                     project={p}
                     index={i}
-                    onOpen={p.caseStudy ? () => setOpenProject(p) : undefined}
+                    onOpen={
+                      p.caseStudy
+                        ? (rect) => {
+                            setOrigin(rect);
+                            setOpenProject(p);
+                          }
+                        : undefined
+                    }
                     onEnlarge={!p.caseStudy ? () => setLightboxProject(p) : undefined}
                     isOpen={openProject?.id === p.id || lightboxProject?.id === p.id}
                   />
@@ -51,7 +59,7 @@ export default function Work() {
       </div>
 
       {openProject && (
-        <ProjectModal project={openProject} onClose={() => setOpenProject(null)} />
+        <ProjectModal project={openProject} origin={origin} onClose={() => setOpenProject(null)} />
       )}
 
       {lightboxProject && (

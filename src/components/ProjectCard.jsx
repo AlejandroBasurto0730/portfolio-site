@@ -67,7 +67,7 @@ export default function ProjectCard({ project, index, onOpen, onEnlarge, isOpen 
 
   const handleFrameClick = () => {
     if (onOpen) {
-      onOpen();
+      onOpen(frameRef.current ? frameRef.current.getBoundingClientRect() : null);
     } else if (canEnlarge) {
       onEnlarge();
     }
