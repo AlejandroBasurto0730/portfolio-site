@@ -6,6 +6,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Credibility from "./components/Credibility";
+import Reel from "./components/Reel";
 import Marquee from "./components/Marquee";
 import Cursor from "./components/Cursor";
 import InspirationButton from "./components/InspirationButton";
@@ -37,6 +38,7 @@ export default function App() {
       <main>
         <Hero />
         <Credibility />
+        <Reel />
         <Work />
         <Marquee />
         <About />
