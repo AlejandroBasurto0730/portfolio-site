@@ -19,7 +19,14 @@ export function LanguageProvider({ children }) {
     }
   }, [lang]);
 
-  const toggleLang = () => setLang((l) => (l === "en" ? "es" : "en"));
+  const toggleLang = () => {
+    const root = document.documentElement;
+    root.classList.remove("lang-swap");
+    void root.offsetWidth; // restart the animation
+    root.classList.add("lang-swap");
+    setTimeout(() => root.classList.remove("lang-swap"), 700);
+    setLang((l) => (l === "en" ? "es" : "en"));
+  };
 
   return (
     <LanguageContext.Provider value={{ lang, toggleLang }}>

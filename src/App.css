@@ -1240,3 +1240,282 @@ section {
     transform: none !important;
   }
 }
+
+/* ── Carousels ─────────────────────────────────────────────── */
+.carousel {
+  position: relative;
+  min-width: 0;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  padding: 6px 2px 18px;
+  cursor: grab;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-track.is-dragging {
+  cursor: grabbing;
+  scroll-snap-type: none;
+  user-select: none;
+}
+
+.carousel-track > * {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  transform-origin: 50% 60%;
+}
+
+.work-carousel .carousel-track > .project-card {
+  width: clamp(270px, 78vw, 440px);
+}
+
+.work-carousel .project-card.is-visible {
+  transform: scale(calc(1 - var(--depth, 0) * 0.06));
+  opacity: calc(1 - var(--depth, 0) * 0.35);
+}
+
+.modal-carousel .carousel-track > .modal-image-item {
+  width: clamp(200px, 56vw, 270px);
+}
+
+.carousel-bar {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 4px;
+}
+
+.carousel-progress {
+  flex: 1;
+  height: 2px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.carousel-progress span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  transform-origin: left center;
+  transition: transform 0.2s ease-out;
+}
+
+.carousel-arrows {
+  display: flex;
+  gap: 8px;
+}
+
+.carousel-arrows button {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.carousel-arrows button:hover:not(:disabled) {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  transform: scale(1.06);
+}
+
+.carousel-arrows button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .work-carousel .project-card.is-visible {
+    transform: none;
+    opacity: 1;
+  }
+  .carousel-track {
+    scroll-behavior: auto;
+  }
+}
+
+/* ── Marquee ───────────────────────────────────────────────── */
+.marquee {
+  overflow: hidden;
+  padding: 26px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marqueeRun 38s linear infinite;
+}
+
+.marquee:hover .marquee-track,
+.marquee:active .marquee-track {
+  animation-play-state: paused;
+}
+
+.marquee-group {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.marquee-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 28px;
+  padding-right: 28px;
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: clamp(22px, 4vw, 38px);
+  letter-spacing: -0.01em;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.marquee-item i {
+  font-style: normal;
+  font-size: 0.5em;
+  color: var(--accent);
+}
+
+@keyframes marqueeRun {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ── Title mask reveal ─────────────────────────────────────── */
+.section-title {
+  overflow: hidden;
+  padding-bottom: 0.08em;
+}
+
+.section-title-inner {
+  display: inline-block;
+  transform: translateY(108%);
+  transition: transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) 0.05s;
+}
+
+.section-head.is-visible .section-title-inner {
+  transform: translateY(0);
+}
+
+/* ── Language swap ─────────────────────────────────────────── */
+@keyframes langSwap {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+    filter: blur(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+
+.lang-swap h1 .hero-title-prefix,
+.lang-swap .hero-sub,
+.lang-swap .section-subtitle,
+.lang-swap .project-title,
+.lang-swap .project-blurb,
+.lang-swap .project-type,
+.lang-swap .about p,
+.lang-swap .skills-list li,
+.lang-swap .nav a {
+  animation: langSwap 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+/* ── Custom cursor (desktop) ───────────────────────────────── */
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.cursor.is-on {
+  opacity: 1;
+}
+
+.cursor::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  margin: -7px 0 0 -7px;
+  border-radius: 50%;
+  background: var(--accent);
+  mix-blend-mode: multiply;
+  transition: width 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), height 0.25s cubic-bezier(0.2, 0.8, 0.2, 1),
+    margin 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.cursor.is-link::before {
+  width: 34px;
+  height: 34px;
+  margin: -17px 0 0 -17px;
+  opacity: 0.35;
+}
+
+.cursor.is-big::before {
+  width: 84px;
+  height: 84px;
+  margin: -42px 0 0 -42px;
+  mix-blend-mode: normal;
+}
+
+.cursor-label {
+  position: absolute;
+  left: -42px;
+  top: -8px;
+  width: 84px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .has-cursor .project-card-button,
+  .has-cursor .carousel-track {
+    cursor: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+  .section-title-inner {
+    transform: none;
+    transition: none;
+  }
+  .lang-swap * {
+    animation: none !important;
+  }
+}

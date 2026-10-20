@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { projects, FEATURED_PROJECT_ID } from "../data/projects";
 import ProjectCard from "./ProjectCard";
+import Carousel from "./Carousel";
 import SectionHead from "./SectionHead";
 import ProjectModal from "./ProjectModal";
 import VideoLightbox from "./VideoLightbox";
@@ -32,7 +33,7 @@ export default function Work() {
           return (
             <div key={group.key} className="work-group">
               <h3 className="work-group-label">{group.label}</h3>
-              <div className="work-grid">
+              <Carousel className="work-carousel" label={group.label}>
                 {items.map((p, i) => (
                   <ProjectCard
                     key={p.id}
@@ -43,7 +44,7 @@ export default function Work() {
                     isOpen={openProject?.id === p.id || lightboxProject?.id === p.id}
                   />
                 ))}
-              </div>
+              </Carousel>
             </div>
           );
         })}

@@ -5,6 +5,8 @@ import Work from "./components/Work";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
+import Marquee from "./components/Marquee";
+import Cursor from "./components/Cursor";
 import InspirationButton from "./components/InspirationButton";
 import { LanguageProvider } from "./LanguageContext";
 import "./App.css";
@@ -34,11 +36,13 @@ export default function App() {
       <main>
         <Hero />
         <Work />
+        <Marquee />
         <About />
         <Skills />
         <Contact />
       </main>
       <InspirationButton />
+      <Cursor />
     </LanguageProvider>
   );
 }

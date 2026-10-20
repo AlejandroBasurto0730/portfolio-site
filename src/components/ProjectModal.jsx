@@ -2,8 +2,20 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import ImageLightbox from "./ImageLightbox";
 import VideoLightbox from "./VideoLightbox";
+import Carousel from "./Carousel";
 import { useLanguage } from "../LanguageContext";
 import { t } from "../i18n";
+
+function Gallery({ compare, count, label, children }) {
+  if (compare || count < 3) {
+    return <div className={`modal-image-grid ${compare ? "is-compare" : ""}`}>{children}</div>;
+  }
+  return (
+    <Carousel className="modal-carousel" label={label}>
+      {children}
+    </Carousel>
+  );
+}
 
 export default function ProjectModal({ project, onClose }) {
   const [zoomed, setZoomed] = useState(null); // { type, src, poster, orientation }
@@ -73,7 +85,7 @@ export default function ProjectModal({ project, onClose }) {
           {caseStudy?.sections.map((section) => (
             <div key={section.title} className="modal-section">
               <h3 className="modal-section-title">{section.title}</h3>
-              <div className={`modal-image-grid ${section.layout === "compare" ? "is-compare" : ""}`}>
+              <Gallery compare={section.layout === "compare"} count={section.images.length} label={section.title}>
                 {section.images.map((item) => {
                   const src = typeof item === "string" ? item : item.src;
                   const caption = typeof item === "string" ? null : item.caption;
@@ -110,7 +122,7 @@ export default function ProjectModal({ project, onClose }) {
                     </div>
                   );
                 })}
-              </div>
+              </Gallery>
             </div>
           ))}
         </div>
