@@ -17,7 +17,12 @@ export default function Hero() {
   useEffect(() => {
     const el = videoRef.current;
     if (!el || featured.mediaType !== "video") return;
-    el.play().catch(() => {});
+    const io = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) el.play().catch(() => {});
+      else el.pause();
+    });
+    io.observe(el);
+    return () => io.disconnect();
   }, [featured.mediaType]);
 
   return (

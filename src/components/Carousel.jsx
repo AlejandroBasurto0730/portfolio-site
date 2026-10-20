@@ -1,12 +1,14 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
-// Lightweight swipe carousel: native scroll-snap (great on touch) plus
-// mouse drag, arrow buttons, a progress bar, and a depth effect where cards
-// away from the center shrink slightly.
-export default function Carousel({ children, className = "", label = "carousel", depth = true }) {
+// Lightweight swipe carousel: native scroll-snap (smooth on touch) plus
+// mouse drag, arrow buttons and a progress bar. Scroll handling writes
+// straight to the DOM — no React re-render per scroll frame — so it stays
+// smooth even with video cards.
+export default function Carousel({ children, className = "", label = "carousel" }) {
   const trackRef = useRef(null);
+  const barRef = useRef(null);
   const drag = useRef({ down: false, x: 0, left: 0, moved: false });
-  const [progress, setProgress] = useState(0);
+  const edges = useRef({ prev: false, next: true });
   const [canPrev, setCanPrev] = useState(false);
   const [canNext, setCanNext] = useState(true);
 
@@ -14,30 +16,35 @@ export default function Carousel({ children, className = "", label = "carousel",
     const el = trackRef.current;
     if (!el) return;
     const max = el.scrollWidth - el.clientWidth;
-    setProgress(max > 0 ? el.scrollLeft / max : 0);
-    setCanPrev(el.scrollLeft > 4);
-    setCanNext(el.scrollLeft < max - 4);
-    if (!depth) return;
-    const mid = el.scrollLeft + el.clientWidth / 2;
-    for (const child of el.children) {
-      const c = child.offsetLeft + child.offsetWidth / 2;
-      const d = Math.min(1, Math.abs(c - mid) / (el.clientWidth * 0.75));
-      child.style.setProperty("--depth", d.toFixed(3));
+    const p = max > 0 ? el.scrollLeft / max : 0;
+    if (barRef.current) barRef.current.style.transform = `scaleX(${0.12 + 0.88 * p})`;
+    const prev = el.scrollLeft > 4;
+    const next = el.scrollLeft < max - 4;
+    if (prev !== edges.current.prev) {
+      edges.current.prev = prev;
+      setCanPrev(prev);
     }
-  }, [depth]);
+    if (next !== edges.current.next) {
+      edges.current.next = next;
+      setCanNext(next);
+    }
+  }, []);
 
   useEffect(() => {
     update();
     const el = trackRef.current;
-    let raf = 0;
+    let ticking = false;
     const onScroll = () => {
-      cancelAnimationFrame(raf);
-      raf = requestAnimationFrame(update);
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        ticking = false;
+        update();
+      });
     };
     el.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", onScroll);
     return () => {
-      cancelAnimationFrame(raf);
       el.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onScroll);
     };
@@ -52,8 +59,7 @@ export default function Carousel({ children, className = "", label = "carousel",
 
   const onPointerDown = (e) => {
     if (e.pointerType !== "mouse") return;
-    const el = trackRef.current;
-    drag.current = { down: true, x: e.clientX, left: el.scrollLeft, moved: false };
+    drag.current = { down: true, x: e.clientX, left: trackRef.current.scrollLeft, moved: false };
   };
   const onPointerMove = (e) => {
     const d = drag.current;
@@ -66,9 +72,8 @@ export default function Carousel({ children, className = "", label = "carousel",
     if (d.moved) trackRef.current.scrollLeft = d.left - dx;
   };
   const endDrag = () => {
-    const d = drag.current;
-    if (!d.down) return;
-    d.down = false;
+    if (!drag.current.down) return;
+    drag.current.down = false;
     trackRef.current.classList.remove("is-dragging");
   };
   // Swallow the click that ends a drag so cards don't open by accident.
@@ -95,7 +100,7 @@ export default function Carousel({ children, className = "", label = "carousel",
       </div>
       <div className="carousel-bar">
         <div className="carousel-progress" aria-hidden="true">
-          <span style={{ transform: `scaleX(${0.12 + 0.88 * progress})` }} />
+          <span ref={barRef} />
         </div>
         <div className="carousel-arrows">
           <button type="button" onClick={() => go(-1)} disabled={!canPrev} aria-label="Previous">

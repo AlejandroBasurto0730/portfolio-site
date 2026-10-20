@@ -1272,16 +1272,20 @@ section {
 .carousel-track > * {
   flex: 0 0 auto;
   scroll-snap-align: start;
-  transform-origin: 50% 60%;
+  contain: layout style;
+}
+
+.carousel-track .project-frame video,
+.carousel-track .project-frame img {
+  transform: translateZ(0);
+}
+
+.carousel-progress span {
+  will-change: transform;
 }
 
 .work-carousel .carousel-track > .project-card {
   width: clamp(270px, 78vw, 440px);
-}
-
-.work-carousel .project-card.is-visible {
-  transform: scale(calc(1 - var(--depth, 0) * 0.06));
-  opacity: calc(1 - var(--depth, 0) * 0.35);
 }
 
 .modal-carousel .carousel-track > .modal-image-item {
@@ -1308,7 +1312,7 @@ section {
   height: 100%;
   background: var(--accent);
   transform-origin: left center;
-  transition: transform 0.2s ease-out;
+  transform: scaleX(0.12);
 }
 
 .carousel-arrows {
@@ -1341,10 +1345,6 @@ section {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .work-carousel .project-card.is-visible {
-    transform: none;
-    opacity: 1;
-  }
   .carousel-track {
     scroll-behavior: auto;
   }
@@ -1357,13 +1357,34 @@ section {
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   background: var(--surface);
-  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  position: relative;
+}
+
+.marquee::before,
+.marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.marquee::before {
+  left: 0;
+  background: linear-gradient(90deg, var(--surface), transparent);
+}
+
+.marquee::after {
+  right: 0;
+  background: linear-gradient(270deg, var(--surface), transparent);
 }
 
 .marquee-track {
   display: flex;
   width: max-content;
+  will-change: transform;
   animation: marqueeRun 38s linear infinite;
 }
 
@@ -1517,5 +1538,14 @@ section {
   }
   .lang-swap * {
     animation: none !important;
+  }
+}
+
+/* Phones: real blur over moving video is what makes scrolling stutter */
+@media (hover: none) {
+  .nav {
+    background: rgba(251, 251, 253, 0.97);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
   }
 }

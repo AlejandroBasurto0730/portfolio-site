@@ -37,7 +37,7 @@ export default function ProjectCard({ project, index, onOpen, onEnlarge, isOpen 
           releasePlay(el);
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.6 }
     );
     observer.observe(frame);
     return () => {
@@ -98,10 +98,10 @@ export default function ProjectCard({ project, index, onOpen, onEnlarge, isOpen 
             muted
             loop
             playsInline
-            preload="auto"
+            preload="metadata"
           />
         ) : (
-          <img src={media} alt={title} loading="lazy" />
+          <img src={media} alt={title} loading="lazy" decoding="async" />
         )}
         {canEnlarge && (
           <span className="expand-indicator" aria-hidden="true">

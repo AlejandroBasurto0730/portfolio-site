@@ -104,7 +104,9 @@ export default function HeroWord({ text }) {
     let prevDx = null;
     let sm = null; // smoothed pose
     let released = null; // rope end when it was let go
+    let stopObserving = () => {};
     let tl = null; // timeline, computed once at start
+    let geo = null; // cached layout — measured on resize, never per frame
 
     const measure = () => {
       const fs = parseFloat(getComputedStyle(stage).fontSize) || 60;
@@ -149,7 +151,7 @@ export default function HeroWord({ text }) {
       const dt = Math.min(0.05, (now - last) / 1000 || 0.016);
       last = now;
       const t = (now - t0) / 1000 - START_DELAY;
-      const g = measure();
+      const g = geo;
       const { s, B, fs } = g;
 
       if (!tl) {
@@ -415,6 +417,13 @@ export default function HeroWord({ text }) {
 
     const startLoop = () => {
       if (cancelled) return;
+      geo = measure();
+      const ro = new ResizeObserver(() => {
+        geo = measure();
+      });
+      ro.observe(stage);
+      ro.observe(word);
+      stopObserving = () => ro.disconnect();
       raf = requestAnimationFrame(frame);
     };
     const fontsReady = document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve();
@@ -423,6 +432,7 @@ export default function HeroWord({ text }) {
     return () => {
       cancelled = true;
       cancelAnimationFrame(raf);
+      stopObserving();
     };
   }, [reduced]);
 
