@@ -43,7 +43,7 @@ export default function Contact() {
   return (
     <section id="contact" className="contact">
       <div className="container">
-        <SectionHead title={contact.title} />
+        <SectionHead no="04" title={contact.title} />
 
         <div ref={ref} className={`contact-body ${visible ? "is-visible" : ""}`}>
           <a href="mailto:alejandrobasurto0730@gmail.com" className="contact-email">

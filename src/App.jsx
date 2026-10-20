@@ -5,6 +5,7 @@ import Work from "./components/Work";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
+import Credibility from "./components/Credibility";
 import Marquee from "./components/Marquee";
 import Cursor from "./components/Cursor";
 import InspirationButton from "./components/InspirationButton";
@@ -35,6 +36,7 @@ export default function App() {
       <Nav active={active} sections={SECTIONS} />
       <main>
         <Hero />
+        <Credibility />
         <Work />
         <Marquee />
         <About />

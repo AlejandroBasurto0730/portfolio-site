@@ -23,7 +23,7 @@ export default function Work() {
   return (
     <section id="work" className="work">
       <div className="container">
-        <SectionHead title={work.title} subtitle={work.subtitle} />
+        <SectionHead no="01" title={work.title} subtitle={work.subtitle} />
 
         {GROUPS.map((group) => {
           const items = projects

@@ -50,7 +50,13 @@ export default function Hero() {
   return (
     <section id="hero" className="hero">
       <div className="container hero-inner">
-        <div className="hero-eyebrow">{hero.eyebrow}</div>
+        <div className="hero-eyebrow">
+          <span className="hero-status">
+            <i aria-hidden="true" />
+            {lang === "es" ? "Disponible para trabajar" : "Open to work"}
+          </span>
+          <span className="hero-eyebrow-text">{hero.eyebrow}</span>
+        </div>
         <h1 className="hero-title">
           <span className="hero-title-prefix">{hero.titlePrefix}</span>
           <HeroWord text={hero.moves} />

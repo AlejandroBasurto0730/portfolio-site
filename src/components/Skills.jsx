@@ -18,7 +18,7 @@ export default function Skills() {
   return (
     <section id="skills" className="skills">
       <div className="container">
-        <SectionHead title={skills.title} />
+        <SectionHead no="03" title={skills.title} />
 
         <div ref={ref} className={`skills-grid ${visible ? "is-visible" : ""}`}>
           {GROUPS.map((g, i) => (

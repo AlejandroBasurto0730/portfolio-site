@@ -1,14 +1,15 @@
 
 :root {
-  --bg: #fbfbfd;
-  --surface: #ffffff;
-  --surface-2: #f5f5f7;
-  --border: #e5e5e7;
-  --text: #1d1d1f;
-  --text-muted: #6e6e73;
-  --text-faint: #86868b;
-  --accent: #0071e3;
-  --accent-dim: #0058b0;
+  color-scheme: dark;
+  --bg: #0a0a0c;
+  --surface: #131316;
+  --surface-2: #1b1b20;
+  --border: #26262c;
+  --text: #f3f1ec;
+  --text-muted: #a8a8b0;
+  --text-faint: #76767f;
+  --accent: #2b8cff;
+  --accent-dim: #1a6fd8;
 
   --font-display: "Bricolage Grotesque Variable", "Instrument Sans Variable", -apple-system, sans-serif;
   --font-body: "Instrument Sans Variable", -apple-system, "Segoe UI", sans-serif;
