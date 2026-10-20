@@ -88,19 +88,14 @@ export default function Hero() {
                 playsInline
                 preload="auto"
               />
-              <span className="hero-visual-label">
-                {hero.featured} — {featured.title}
-              </span>
             </>
           ) : (
             <img className="hero-visual-video" src={featured.media} alt={featured.title} />
           )}
         </button>
-        {featured.mediaType !== "video" && (
-          <p className="hero-visual-caption">
-            {hero.featured} — {featured.title}
-          </p>
-        )}
+        <p className="hero-visual-caption">
+          {hero.featured} — {featured.title}
+        </p>
       </div>
 
       {showCaseStudy && (

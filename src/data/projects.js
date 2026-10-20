@@ -20,8 +20,9 @@ export const projects = [
     category: "design",
     blurb: "Identity for a home bakery in Cuajimalpa, Mexico City — same pink, different attitude.",
     tags: ["Branding", "Packaging", "Typography"],
-    media: "/projects/candies-poster.jpg",
-    mediaType: "image",
+    media: "/projects/candies.mp4",
+    mediaType: "video",
+    poster: "/projects/candies-poster.jpg",
     caseStudy: {
       problem:
         "Candies has been baking out of the house since 2014, and already had a white-and-pink logo — but it read as childish and competed with the product itself. It needed to feel elegant without losing the pink the customers already recognize.",
@@ -92,8 +93,9 @@ export const projects = [
     category: "design",
     blurb: "Full brand identity and bilingual website for a Mexican accounting and audit firm — built from scratch, no template.",
     tags: ["Brand Identity", "Web Design", "Bilingual"],
-    media: "/projects/basher-poster.jpg",
-    mediaType: "image",
+    media: "/projects/basher.mp4",
+    mediaType: "video",
+    poster: "/projects/basher-poster.jpg",
     caseStudy: {
       liveUrl: "https://basher.mx/",
       problem:
