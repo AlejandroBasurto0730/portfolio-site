@@ -1867,3 +1867,27 @@ section {
 .hero-visual-why{margin:0;font-size:.92rem;line-height:1.5;color:var(--muted);max-width:46ch}
 .hero-visual-cta{background:none;border:0;padding:0;color:var(--text);font:inherit;font-size:.92rem;border-bottom:1px solid var(--accent);cursor:pointer}
 .hero-visual-cta:hover{color:var(--accent)}
+
+/* Fixes: header fully opaque on phones; featured frame no longer drifts over its caption */
+@media (hover: none), (max-width: 900px) {
+  .nav {
+    background: #0a0a0c;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
+.hero-visual-frame {
+  transform: none;
+}
+.hero-visual-caption {
+  position: relative;
+  z-index: 1;
+}
+.hero-visual-label {
+  position: static;
+  width: auto;
+  max-width: none;
+  background: none;
+  backdrop-filter: none;
+  padding: 0;
+}
