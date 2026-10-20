@@ -304,8 +304,34 @@ export const projects = [
             },
           ],
         },
+      ],
+    },
+    link: "",
+  },
+  {
+    id: "prj_10",
+    code: "PRJ_05B",
+    timecode: "00:04:34:07",
+    title: "House of Knifes × Wüsthof — Social Series",
+    type: "Motion Graphics",
+    year: "2026",
+    category: "motion",
+    blurb: "Five vertical product videos for House of Knifes' Wüsthof collaboration — same kinetic-type system, built for a running content series.",
+    tags: ["Motion", "Social", "Vertical", "Branded Content"],
+    media: "/projects/house-of-knifes-case-study/wusthof-01-bolster.mp4",
+    mediaType: "video",
+    poster: "/projects/house-of-knifes-case-study/wusthof-01-bolster-poster.jpg",
+    orientation: "vertical",
+    caseStudy: {
+      problem:
+        "After the warehouse sale edit, House of Knifes came back with a batch of raw talking-head clips for their Wüsthof collaboration — five short product and education pieces, each meant to carry its own hook. The footage was solid, but on its own it was just another knife demo in a feed full of them.",
+      research:
+        "Rather than treat each clip as a one-off, I built them as a series: the same kinetic-type system from the warehouse sale edit, reused and made consistent — same type rhythm, same reveal timing, same red/yellow accent pulled from the brand — so the five posts read as one recognizable run instead of five disconnected videos.",
+      solution:
+        "Each video gets its own punchy hook typed out in sync with the host's voice — the bolster question, the 7th-generation claim, the dishwasher test, the forged range, the santoku — built to work as a stand-alone post or stacked together as a campaign.",
+      sections: [
         {
-          title: "House of Knifes × Wüsthof — Social Series",
+          title: "The Series",
           images: [
             {
               src: "/projects/house-of-knifes-case-study/wusthof-01-bolster.mp4",

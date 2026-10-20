@@ -242,8 +242,25 @@ export const projectsEs = {
             "Después — mi edición, reconstruida alrededor de la tipografía y el ritmo.",
           ],
         },
+      ],
+    },
+  },
+
+  prj_10: {
+    // House of Knifes × Wüsthof — Social Series
+    type: "Motion Graphics",
+    blurb: "Cinco videos verticales de producto para la colaboración de House of Knifes con Wüsthof — el mismo sistema de tipografía cinética, pensado para una serie.",
+    tags: ["Motion", "Social", "Vertical", "Contenido de marca"],
+    caseStudy: {
+      problem:
+        "Después de la edición de la liquidación de bodega, House of Knifes volvió con un lote de clips sin editar para su colaboración con Wüsthof — cinco piezas cortas de producto y educación, cada una pensada para llevar su propio gancho. El material estaba bien, pero por sí solo era solo otra demo de cuchillos en un feed lleno de ellas.",
+      research:
+        "En vez de tratar cada clip como algo aislado, los construí como una serie: el mismo sistema de tipografía cinética de la edición de la liquidación, reutilizado y hecho consistente — mismo ritmo tipográfico, mismo tiempo de revelación, mismo acento rojo/amarillo tomado de la marca — para que los cinco posts se leyeran como una sola corrida reconocible en vez de cinco videos sueltos.",
+      solution:
+        "Cada video tiene su propio gancho directo, escrito en sincronía con la voz del presentador — la pregunta del bolster, el dato de la séptima generación, la prueba del lavavajillas, la línea forjada, el santoku — construidos para funcionar solos o en conjunto como campaña.",
+      sections: [
         {
-          title: "House of Knifes × Wüsthof — Serie para redes",
+          title: "La Serie",
           images: [
             "¿Por qué Wüsthof le quitó el bolster?",
             "La séptima generación de Wüsthof.",
