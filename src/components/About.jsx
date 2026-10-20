@@ -4,7 +4,7 @@ import { useLanguage } from "../LanguageContext";
 import { t } from "../i18n";
 
 // Drop a photo into /public (e.g. /about-photo.jpg) and put its path here.
-const ABOUT_PHOTO = null;
+const ABOUT_PHOTO = "/about-photo.jpg";
 
 export default function About() {
   const [ref, visible] = useReveal();

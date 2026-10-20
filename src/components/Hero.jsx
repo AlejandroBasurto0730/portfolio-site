@@ -99,9 +99,22 @@ export default function Hero() {
             <img className="hero-visual-video" src={featured.media} alt={featured.title} />
           )}
         </button>
-        <p className="hero-visual-caption">
-          {hero.featured} — {featured.title}
-        </p>
+        <div className="hero-visual-caption">
+          <span className="hero-visual-label">
+            {hero.featured} — {featured.title}
+          </span>
+          <p className="hero-visual-why">{hero.featuredWhy}</p>
+          <button
+            type="button"
+            className="hero-visual-cta"
+            onClick={() => {
+              originRef.current = frameRef.current?.getBoundingClientRect() ?? null;
+              setShowCaseStudy(true);
+            }}
+          >
+            {hero.featuredCta}
+          </button>
+        </div>
       </div>
 
       {showCaseStudy && (

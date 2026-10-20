@@ -1860,3 +1860,10 @@ section {
 .hero-title {
   font-size: clamp(66px, 13.5vw, 200px);
 }
+
+/* Featured project explanation */
+.hero-visual-caption{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin-top:14px;text-align:left}
+.hero-visual-label{font-family:"Fragment Mono",monospace;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.hero-visual-why{margin:0;font-size:.92rem;line-height:1.5;color:var(--muted);max-width:46ch}
+.hero-visual-cta{background:none;border:0;padding:0;color:var(--text);font:inherit;font-size:.92rem;border-bottom:1px solid var(--accent);cursor:pointer}
+.hero-visual-cta:hover{color:var(--accent)}

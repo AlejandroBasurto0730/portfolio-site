@@ -57,6 +57,8 @@ export const t = {
       viewWork: "View work",
       getInTouch: "Get in touch",
       featured: "Featured project",
+      featuredWhy: "Why this one first: my most complete work. A full brand identity plus a bilingual website I designed and built from scratch for a real client.",
+      featuredCta: "View case study →",
     },
     work: {
       title: "Selected work",
@@ -120,6 +122,8 @@ export const t = {
       viewWork: "Ver trabajo",
       getInTouch: "Contáctame",
       featured: "Proyecto destacado",
+      featuredWhy: "Por qué va primero: es mi trabajo más completo. Una identidad de marca y un sitio web bilingüe que diseñé y construí desde cero para un cliente real.",
+      featuredCta: "Ver caso de estudio →",
     },
     work: {
       title: "Trabajo seleccionado",
