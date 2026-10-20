@@ -274,9 +274,9 @@ export const projects = [
     category: "motion",
     blurb: "Vertical promo edit for a warehouse sale — built for social, sharp typographic reveals.",
     tags: ["Motion", "Social", "Vertical"],
-    media: "/projects/house-of-knifes-warehouse-sale.mp4",
+    media: "/projects/hok-warehouse-thumb.mp4",
     mediaType: "video",
-    poster: "/projects/house-of-knifes-poster.jpg",
+    poster: "/projects/hok-warehouse-thumb-poster.jpg",
     orientation: "vertical",
     caseStudy: {
       problem:
@@ -320,9 +320,9 @@ export const projects = [
     category: "motion",
     blurb: "Five vertical product videos for House of Knifes' Wüsthof collaboration — same kinetic-type system, built for a running content series.",
     tags: ["Motion", "Social", "Vertical", "Branded Content"],
-    media: "/projects/house-of-knifes-case-study/wusthof-01-bolster.mp4",
+    media: "/projects/wusthof-series-thumb.mp4",
     mediaType: "video",
-    poster: "/projects/house-of-knifes-case-study/wusthof-01-bolster-poster.jpg",
+    poster: "/projects/wusthof-series-thumb-poster.jpg",
     orientation: "vertical",
     caseStudy: {
       problem:
@@ -386,9 +386,9 @@ export const projects = [
     category: "motion",
     blurb: "Flat 2D explainer piece for Vancouver's TransLink Compass Card — personal practice project.",
     tags: ["Motion", "Explainer", "Flat 2D"],
-    media: "/projects/compass-card.mp4",
+    media: "/projects/compass-card-thumb.mp4",
     mediaType: "video",
-    poster: "/projects/compass-card-poster.jpg",
+    poster: "/projects/compass-card-thumb-poster.jpg",
     link: "",
   },
   // {
