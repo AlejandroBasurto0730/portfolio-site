@@ -242,6 +242,16 @@ export const projectsEs = {
             "Después — mi edición, reconstruida alrededor de la tipografía y el ritmo.",
           ],
         },
+        {
+          title: "House of Knifes × Wüsthof — Serie para redes",
+          images: [
+            "¿Por qué Wüsthof le quitó el bolster?",
+            "La séptima generación de Wüsthof.",
+            "Wüsthof lo probó en el lavavajillas.",
+            "Un Wüsthof forjado para cada cocina.",
+            "Un santoku con el que sí puedes rock-chop.",
+          ],
+        },
       ],
     },
   },
