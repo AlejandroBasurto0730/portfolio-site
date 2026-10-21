@@ -13,7 +13,7 @@
 
   --font-display: "Bricolage Grotesque Variable", "Instrument Sans Variable", -apple-system, sans-serif;
   --font-body: "Instrument Sans Variable", -apple-system, "Segoe UI", sans-serif;
-  --font-mono: "Fragment Mono", ui-monospace, monospace;
+  --font-mono: var(--font-body);
 }
 
 * {
