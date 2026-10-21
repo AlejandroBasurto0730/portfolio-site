@@ -223,13 +223,13 @@ export const projectsEs = {
   },
 
   prj_06: {
-    // House of Knifes
+    // House of Knives
     type: "Motion Graphics",
     blurb: "Edición vertical promocional para una liquidación de bodega — hecha para redes, con revelaciones tipográficas marcadas.",
     tags: ["Motion", "Social", "Vertical"],
     caseStudy: {
       problem:
-        "Me encontré con el video de la liquidación de bodega de House of Knifes mientras scrolleaba Instagram, y me detuvo por la razón equivocada — la edición era plana y olvidable, solo unos logos y textos pegados sobre un clip de alguien hablando a cámara. Resulta que el que sale en cámara es el dueño real, editando sus propios promocionales, lo cual explica por qué el contenido en sí estaba bien pero la presentación no le hacía ningún favor.",
+        "Me encontré con el video de la liquidación de bodega de House of Knives mientras scrolleaba Instagram, y me detuvo por la razón equivocada — la edición era plana y olvidable, solo unos logos y textos pegados sobre un clip de alguien hablando a cámara. Resulta que el que sale en cámara es el dueño real, editando sus propios promocionales, lo cual explica por qué el contenido en sí estaba bien pero la presentación no le hacía ningún favor.",
       research:
         "En vez de regrabar algo, vi lo que ya había filmado y pensé en cómo la tipografía cinética — texto que se mueve en sincronía con lo que se dice — podía hacer que el mismo mensaje pegara más fuerte sin necesitar material nuevo. Es una técnica hecha justo para este tipo de contenido de alguien hablando a cámara, porque le da al ojo algo que seguir más allá de solo una cara en pantalla.",
       solution:
@@ -247,13 +247,13 @@ export const projectsEs = {
   },
 
   prj_10: {
-    // House of Knifes × Wüsthof — Social Series
+    // House of Knives × Wüsthof — Social Series
     type: "Motion Graphics",
-    blurb: "Cinco videos verticales de producto para la colaboración de House of Knifes con Wüsthof — el mismo sistema de tipografía cinética, pensado para una serie.",
+    blurb: "Cinco videos verticales de producto para la colaboración de House of Knives con Wüsthof — el mismo sistema de tipografía cinética, pensado para una serie.",
     tags: ["Motion", "Social", "Vertical", "Contenido de marca"],
     caseStudy: {
       problem:
-        "Después de la edición de la liquidación de bodega, House of Knifes volvió con un lote de clips sin editar para su colaboración con Wüsthof — cinco piezas cortas de producto y educación, cada una pensada para llevar su propio gancho. El material estaba bien, pero por sí solo era solo otra demo de cuchillos en un feed lleno de ellas.",
+        "Después de la edición de la liquidación de bodega, House of Knives volvió con un lote de clips sin editar para su colaboración con Wüsthof — cinco piezas cortas de producto y educación, cada una pensada para llevar su propio gancho. El material estaba bien, pero por sí solo era solo otra demo de cuchillos en un feed lleno de ellas.",
       research:
         "En vez de tratar cada clip como algo aislado, los construí como una serie: el mismo sistema de tipografía cinética de la edición de la liquidación, reutilizado y hecho consistente — mismo ritmo tipográfico, mismo tiempo de revelación, mismo acento rojo/amarillo tomado de la marca — para que los cinco posts se leyeran como una sola corrida reconocible en vez de cinco videos sueltos.",
       solution:

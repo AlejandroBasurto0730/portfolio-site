@@ -7,8 +7,8 @@ const DATA = {
     items: [
       { name: "Crowe MacKay LLP", role: "In-house graphic designer · 2+ years" },
       { name: "Henkel", role: "Graphic design intern" },
-      { name: "House of Knifes", role: "Freelance video editor" },
-      { name: "BCIT", role: "Graphic Design · Video Editing & Production" },
+      { name: "House of Knives", role: "Freelance video editor" },
+      { name: "BCIT · Anáhuac", role: "Bachelor's Multimedia Design · BCIT diplomas in Graphic Design and Video" },
     ],
   },
   es: {
@@ -16,8 +16,8 @@ const DATA = {
     items: [
       { name: "Crowe MacKay LLP", role: "Diseñador gráfico interno · 2+ años" },
       { name: "Henkel", role: "Prácticas en diseño gráfico" },
-      { name: "House of Knifes", role: "Editor de video freelance" },
-      { name: "BCIT", role: "Diseño Gráfico · Edición y Producción de Video" },
+      { name: "House of Knives", role: "Editor de video freelance" },
+      { name: "BCIT · Anáhuac", role: "Licenciatura en Diseño Multimedia · diplomas BCIT en Diseño Gráfico y Video" },
     ],
   },
 };

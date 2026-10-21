@@ -268,7 +268,7 @@ export const projects = [
     id: "prj_06",
     code: "PRJ_05",
     timecode: "00:04:19:11",
-    title: "House of Knifes — Warehouse Sale",
+    title: "House of Knives — Warehouse Sale",
     type: "Motion Graphics",
     year: "2026",
     category: "motion",
@@ -280,7 +280,7 @@ export const projects = [
     orientation: "vertical",
     caseStudy: {
       problem:
-        "I came across House of Knifes' warehouse sale video while scrolling Instagram, and it stopped me for the wrong reason — the editing was flat and forgettable, just a few logos and captions slapped over a talking-head clip. Turns out the guy on camera is the actual owner, editing his own promos, which explains why the content itself was fine but the presentation wasn't doing it any favors.",
+        "I came across House of Knives' warehouse sale video while scrolling Instagram, and it stopped me for the wrong reason — the editing was flat and forgettable, just a few logos and captions slapped over a talking-head clip. Turns out the guy on camera is the actual owner, editing his own promos, which explains why the content itself was fine but the presentation wasn't doing it any favors.",
       research:
         "Instead of reshooting anything, I looked at what he'd already filmed and thought about how kinetic typography — text that moves in sync with what's being said — could make the same message land harder without needing new footage. It's a technique built for exactly this kind of talking-head content, since it gives the eye something to follow beyond just a face on screen.",
       solution:
@@ -314,11 +314,11 @@ export const projects = [
     id: "prj_10",
     code: "PRJ_05B",
     timecode: "00:04:34:07",
-    title: "House of Knifes × Wüsthof — Social Series",
+    title: "House of Knives × Wüsthof — Social Series",
     type: "Motion Graphics",
     year: "2026",
     category: "motion",
-    blurb: "Five vertical product videos for House of Knifes' Wüsthof collaboration — same kinetic-type system, built for a running content series.",
+    blurb: "Five vertical product videos for House of Knives' Wüsthof collaboration — same kinetic-type system, built for a running content series.",
     tags: ["Motion", "Social", "Vertical", "Branded Content"],
     media: "/projects/wusthof-series-thumb.mp4",
     mediaType: "video",
@@ -326,7 +326,7 @@ export const projects = [
     orientation: "vertical",
     caseStudy: {
       problem:
-        "After the warehouse sale edit, House of Knifes came back with a batch of raw talking-head clips for their Wüsthof collaboration — five short product and education pieces, each meant to carry its own hook. The footage was solid, but on its own it was just another knife demo in a feed full of them.",
+        "After the warehouse sale edit, House of Knives came back with a batch of raw talking-head clips for their Wüsthof collaboration — five short product and education pieces, each meant to carry its own hook. The footage was solid, but on its own it was just another knife demo in a feed full of them.",
       research:
         "Rather than treat each clip as a one-off, I built them as a series: the same kinetic-type system from the warehouse sale edit, reused and made consistent — same type rhythm, same reveal timing, same red/yellow accent pulled from the brand — so the five posts read as one recognizable run instead of five disconnected videos.",
       solution:
