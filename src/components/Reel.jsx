@@ -3,8 +3,8 @@ import { useLanguage } from "../LanguageContext";
 import { useReveal } from "../hooks/useReveal";
 
 const COPY = {
-  en: { label: "Demo reel", title: "Reel, 2026", sub: "Brand and motion work in 37 seconds.", play: "Play reel" },
-  es: { label: "Demo reel", title: "Reel, 2026", sub: "Trabajo de marca y motion en 37 segundos.", play: "Reproducir reel" },
+  en: { label: "Demo reel", title: "Reel, 2026", sub: "Brand and motion work in 34 seconds.", play: "Play reel" },
+  es: { label: "Demo reel", title: "Reel, 2026", sub: "Trabajo de marca y motion en 34 segundos.", play: "Reproducir reel" },
 };
 
 export default function Reel() {
