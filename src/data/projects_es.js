@@ -5,7 +5,7 @@
 export const projectsEs = {
   prj_09: {
     // Candies
-    type: "Identidad de Marca",
+    type: "Identidad de Marca · Cliente real",
     blurb: "Identidad para una pastelería casera en Cuajimalpa, Ciudad de México — mismo rosa, otra actitud.",
     tags: ["Branding", "Empaque", "Tipografía"],
     caseStudy: {
@@ -70,7 +70,7 @@ export const projectsEs = {
 
   prj_08: {
     // Basher
-    type: "Identidad de Marca y Diseño Web",
+    type: "Identidad de Marca y Diseño Web · Cliente real",
     blurb: "Identidad de marca completa y sitio bilingüe para una firma mexicana de contaduría y auditoría — construido desde cero, sin plantilla.",
     tags: ["Identidad de Marca", "Diseño Web", "Bilingüe"],
     caseStudy: {
