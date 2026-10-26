@@ -82,7 +82,7 @@ export const t = {
       designItems: ["Brand Identity", "Typography", "Print & Packaging", "Editorial Layout", "Social Media Content"],
       motionItems: ["After Effects", "Premiere Pro", "Kinetic Type", "Short-Form Edit"],
       toolsItems: ["Illustrator, Photoshop, InDesign", "Figma", "Sitecore CMS, Mailchimp", "HTML & CSS"],
-      educationItems: ["Multimedia Design (2019–2023) — Universidad Anáhuac México", "Certificate, Graphic Design — BCIT", "Associate Certificate, Video Production & Editing — BCIT", "Spanish · English (IELTS C1) · French (A2–B1)"],
+      educationItems: ["Multimedia Design (2019–2023) — Universidad Anáhuac México", "Associate Certificate, Graphic Design — BCIT", "Certificate, Video Production & Editing — BCIT", "Spanish · English (IELTS C1) · French (A2–B1)"],
     },
     contact: {
       title: "Contact",
@@ -148,7 +148,7 @@ export const t = {
       designItems: ["Identidad de Marca", "Tipografía", "Impresión y Empaque", "Layout Editorial", "Contenido para Redes"],
       motionItems: ["After Effects", "Premiere Pro", "Tipografía Cinética", "Edición Short-Form"],
       toolsItems: ["Illustrator, Photoshop, InDesign", "Figma", "Sitecore CMS, Mailchimp", "HTML y CSS"],
-      educationItems: ["Diseño Multimedia (2019–2023) — Universidad Anáhuac México", "Certificado, Diseño Gráfico — BCIT", "Certificado Asociado, Producción y Edición de Video — BCIT", "Español · Inglés (IELTS C1) · Francés (A2–B1)"],
+      educationItems: ["Diseño Multimedia (2019–2023) — Universidad Anáhuac México", "Certificado Asociado, Diseño Gráfico — BCIT", "Certificado, Producción y Edición de Video — BCIT", "Español · Inglés (IELTS C1) · Francés (A2–B1)"],
     },
     contact: {
       title: "Contacto",
