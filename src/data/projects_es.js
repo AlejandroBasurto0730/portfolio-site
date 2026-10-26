@@ -137,39 +137,64 @@ export const projectsEs = {
 
   prj_02: {
     // OEIL
-    type: "Diseño de Marca",
-    blurb: "Identidad visual y diseño de campaña explorando tipografía minimalista y sistemas de layout ópticos.",
-    tags: ["Branding", "Editorial"],
+    type: "Manual de Marca",
+    blurb: "Un manual de marca de 25 páginas para una boutique de optometría en el este de Vancouver: concepto, voz, color, logo, tipografía y cada punto de contacto.",
+    tags: ["Branding", "Guidelines"],
     caseStudy: {
       problem:
         "El sector de la óptica está lleno de marcas con mucho más músculo de marketing que un proyecto como este — Warby Parker, LensCrafters, Specsavers. Quería que OEIL se sostuviera junto a ellas sin fingir ser un trabajo de agencia de gran presupuesto, y sin caer en el look genérico de \"sans-serif limpia más un círculo\" en el que se apoya tanta de la industria.",
       research:
         "Empecé por investigar de verdad cuánto cobran los competidores de OEIL — Specsavers, Warby Parker, LensCrafters, las boutiques independientes — y mapeé dónde podía posicionarse OEIL de forma honesta: ni la más barata, ni la más cara, sino la que se ve como si perteneciera a una tienda más bonita de lo que sugiere su precio. Antes de tocar una computadora, dibujé a mano una página completa de ideas de logo — las malas ideas salen más rápido en papel, lo que deja más espacio para encontrar la buena digitalmente.",
       solution:
-        "El logotipo al que llegué son básicamente dos letras con forma de lentes — \"oe\" — que me permitieron dividir la marca en tres líneas (Sport, Classic, Essentials) sin necesitar tres logos distintos. Mismo símbolo, mismos colores, solo recontextualizado según en qué anaquel esté.",
+        "El símbolo aísla la \"œ\" en el corazón del nombre y se lee dos veces: dos letras redondas que te miran como un par de ojos, o un par de lentes vistos de frente. Ese único símbolo permite dividir la marca en tres líneas (Sport, Classic, Essentials) sin tres logos distintos, y documenté todo en un manual de marca completo: voz, color, construcción, tipografía, imágenes y aplicaciones.",
       sections: [
         {
-          title: "Identidad de Marca",
+          title: "Historia y Voz de Marca",
           images: [
-            "El logo principal, con el pequeño patrón de íconos que construí para darle textura a la marca más allá del solo logotipo.",
-            "Golden Sand, Ivory Sand, Soft Ivory — cálidos, no clínicos, algo poco común en una marca óptica.",
-            "Principal, secundario, solo-isotipo, y solo-logotipo — lo que pida cada aplicación.",
-            "Cómo se extiende el mismo símbolo entre Sport, Classic, y Essentials sin perderse.",
-            "Probando el símbolo hasta un favicon de 16px — si sobrevive eso, sobrevive cualquier cosa.",
+            "La portada: diseño óptico premium a un precio honesto, para una boutique de optometría en East Village, Vancouver.",
+            "El barrio en el que se basa la marca — Hastings–Sunrise, local, diverso y vibrante.",
+            "Misión, visión y el origen de la marca: buenos lentes sin renunciar al estilo ni a un precio accesible.",
+            "Cómo habla OEIL — cálida, refinada, honesta y experta — con ejemplos de qué decir y qué evitar.",
           ],
         },
         {
-          title: "Proceso de Diseño",
+          title: "Audiencia",
           images: [
-            "La página dibujada a mano que vino antes de que esto fuera digital.",
-            "La investigación de precios que hice para definir dónde debía posicionarse realmente OEIL frente a la competencia.",
+            "Tres perfiles de cliente para quienes se diseñó la marca.",
+            "El público principal: personas de 24 a 48 años que quieren lentes con personalidad a un precio justo.",
+          ],
+        },
+        {
+          title: "Sistema de Identidad",
+          images: [
+            "Golden Sand, Ivory Sand, Soft Ivory y Espresso — cálidos, no clínicos, con valores HEX, RGB, CMYK y HSB.",
+            "El concepto: la \"œ\" se lee dos veces, como un par de ojos y como un par de lentes. Incluye bocetos a lápiz.",
+            "La familia del logo: principal, secundario, isotipo y logotipo, más versiones a color y a un solo color.",
+            "Construcción del logo: todo se construye sobre un módulo tomado de las propias letras.",
+            "Tamaños mínimos y especificaciones para impresión y pantalla.",
+            "Espacio libre y usos incorrectos: darle aire al símbolo y nunca alterarlo.",
+            "Poppins como única tipografía de marca, con pesos y jerarquía tipográfica.",
+            "Dirección fotográfica: luminosa, cálida y honesta, con qué hacer y qué evitar.",
+          ],
+        },
+        {
+          title: "Estrategia y Arquitectura",
+          images: [
+            "Posicionamiento: cerca de 69% menos que la boutique independiente promedio, frente a Specsavers, Warby Parker y LensCrafters.",
+            "La estructura de equipo de una boutique pequeña: dos optometristas, atención al público y especialistas en lentes.",
+            "Una casa, tres colecciones: Sport, Classic y Essentials comparten el mismo símbolo.",
           ],
         },
         {
           title: "Aplicaciones",
           images: [
-            "Tarjeta de presentación y papelería — lo aburrido-pero-necesario que toda marca necesita.",
-            "Empaque, póster, y ropa — viendo la marca fuera de una pantalla.",
+            "Papelería corporativa: tarjeta de presentación y hoja membretada en Soft Ivory o Espresso.",
+            "Digital y favicons: probado desde 180 px hasta 16 px.",
+            "Redes sociales: tres plantillas que rotan — mensaje, momento y producto.",
+            "Fachada y gráficos de vitrina.",
+            "Empaque: el momento de entrega — bolsa, estuche y paño de limpieza.",
+            "Cada punto de contacto del recorrido del cliente, del descubrimiento a la entrega.",
+            "Mercancía: la ilustración y el lema en prendas.",
           ],
         },
       ],

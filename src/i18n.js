@@ -99,6 +99,7 @@ export const t = {
       research: "Research",
       solution: "The Solution",
       viewLiveSite: "View live site ↗",
+      viewPdf: "Download the full brand guidelines (PDF) ↓",
     },
     inspiration: {
       button: "Inspire me",
@@ -164,6 +165,7 @@ export const t = {
       research: "Investigación",
       solution: "La Solución",
       viewLiveSite: "Ver sitio en vivo ↗",
+      viewPdf: "Descargar el manual de marca completo (PDF) ↓",
     },
     inspiration: {
       button: "Inspírame",
