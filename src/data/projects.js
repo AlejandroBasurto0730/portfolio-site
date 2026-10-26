@@ -190,17 +190,6 @@ export const projects = [
           ],
         },
         {
-          title: "Social graphics",
-          images: [
-            { src: "/projects/crowe-mackay/01-ceo.jpg", caption: "Leadership quote card for the firm's CEO, set inside the Crowe brand template." },
-            { src: "/projects/crowe-mackay/02-impact.jpg", caption: "Community-impact numbers turned into a single, scannable layout." },
-            { src: "/projects/crowe-mackay/03-lunar.jpg", caption: "Seasonal greeting for Lunar New Year." },
-            { src: "/projects/crowe-mackay/04-congrats.jpg", caption: "Welcome and congratulations card for the Vancouver office." },
-            { src: "/projects/crowe-mackay/05-promoted.jpg", caption: "Promotion announcement for the Calgary office, opening card." },
-            { src: "/projects/crowe-mackay/06-manager.jpg", caption: "Individual manager card from the same promotion series." },
-          ],
-        },
-        {
           title: "Campus recruiting",
           images: [
             { src: "/projects/crowe-mackay/07-students.jpg", caption: "Cover for the student recruiting carousel, with the hashtag and a swipe prompt." },

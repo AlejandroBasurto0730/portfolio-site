@@ -157,17 +157,6 @@ export const projectsEs = {
           ],
         },
         {
-          title: "Gráficas para redes",
-          images: [
-            "Tarjeta de cita del director general de la firma, dentro de la plantilla de marca de Crowe.",
-            "Cifras de impacto comunitario convertidas en un solo diseño fácil de leer.",
-            "Saludo de temporada por el Año Nuevo Lunar.",
-            "Tarjeta de bienvenida y felicitación para la oficina de Vancouver.",
-            "Anuncio de promociones para la oficina de Calgary, tarjeta de apertura.",
-            "Tarjeta individual de una gerente de la misma serie de promociones.",
-          ],
-        },
-        {
           title: "Reclutamiento universitario",
           images: [
             "Portada del carrusel de reclutamiento para estudiantes, con el hashtag y una invitación a deslizar.",
