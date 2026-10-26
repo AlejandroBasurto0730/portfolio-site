@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import { useLanguage } from "../LanguageContext";
 
 const COPY = {
-  en: { label: "Demo reel · 34 s", soundOn: "Sound on", soundOff: "Sound off" },
-  es: { label: "Demo reel · 34 s", soundOn: "Activar sonido", soundOff: "Silenciar" },
+  en: { label: "Demo reel · 30 s", soundOn: "Sound on", soundOff: "Sound off" },
+  es: { label: "Demo reel · 30 s", soundOn: "Activar sonido", soundOff: "Silenciar" },
 };
 
 // Hero reel: starts muted and looping as soon as it is on screen.

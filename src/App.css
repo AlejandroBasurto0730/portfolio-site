@@ -1923,3 +1923,8 @@ section {
 .hero-actions{margin:0 0 28px}
 .hero-visual{margin-top:0}
 @media (max-width:600px){.hero{padding-top:84px}.hero-sub{font-size:15.5px}}
+
+/* Hero word: slides in with motion blur (replaces the old stickman) */
+.hero-move-in{animation:heroMoveIn .9s cubic-bezier(.2,.8,.2,1) .2s both}
+@keyframes heroMoveIn{from{opacity:0;transform:translateX(-0.5em);filter:blur(16px)}60%{filter:blur(4px)}to{opacity:1;transform:none;filter:blur(0)}}
+@media (prefers-reduced-motion:reduce){.hero-move-in{animation:none}}

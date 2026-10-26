@@ -1,5 +1,4 @@
 import Reel from "./Reel";
-import HeroWord from "./HeroWord";
 import { useLanguage } from "../LanguageContext";
 import { t } from "../i18n";
 
@@ -19,7 +18,9 @@ export default function Hero() {
         </div>
         <h1 className="hero-title">
           <span className="hero-title-prefix">{hero.titlePrefix}</span>
-          <HeroWord text={hero.moves} />
+          <span className="hero-stage">
+            <span className="hero-title-walk hero-move-in">{hero.moves}.</span>
+          </span>
         </h1>
         <p className="hero-sub">{hero.sub}</p>
         <div className="hero-actions">
