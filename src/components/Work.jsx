@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { projects, FEATURED_PROJECT_ID } from "../data/projects";
+import { projects } from "../data/projects";
 import ProjectCard from "./ProjectCard";
 import Carousel from "./Carousel";
 import SectionHead from "./SectionHead";
@@ -27,7 +27,7 @@ export default function Work() {
 
         {GROUPS.map((group) => {
           const items = projects
-            .filter((p) => p.category === group.key && p.id !== FEATURED_PROJECT_ID)
+            .filter((p) => p.category === group.key)
             .map((p) => localizeProject(p, lang));
           if (items.length === 0) return null;
 

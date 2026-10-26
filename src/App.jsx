@@ -6,10 +6,8 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Credibility from "./components/Credibility";
-import Reel from "./components/Reel";
 import Marquee from "./components/Marquee";
 import Cursor from "./components/Cursor";
-import InspirationButton from "./components/InspirationButton";
 import { LanguageProvider } from "./LanguageContext";
 import "./App.css";
 
@@ -38,14 +36,12 @@ export default function App() {
       <main>
         <Hero />
         <Credibility />
-        <Reel />
         <Work />
         <Marquee />
         <About />
         <Skills />
         <Contact />
       </main>
-      <InspirationButton />
       <Cursor />
     </LanguageProvider>
   );

@@ -11,79 +11,6 @@ export const FEATURED_PROJECT_ID = "prj_08";
 
 export const projects = [
   {
-    id: "prj_09",
-    code: "PRJ_00",
-    timecode: "00:00:06:02",
-    title: "Candies",
-    type: "Brand Identity",
-    year: "2026",
-    category: "design",
-    blurb: "Identity for a home bakery in Cuajimalpa, Mexico City — same pink, different attitude.",
-    tags: ["Branding", "Packaging", "Typography"],
-    media: "/projects/candies.mp4",
-    mediaType: "video",
-    poster: "/projects/candies-poster.jpg",
-    caseStudy: {
-      problem:
-        "Candies has been baking out of the house since 2014, and already had a white-and-pink logo — but it read as childish and competed with the product itself. It needed to feel elegant without losing the pink the customers already recognize.",
-      research:
-        "Kept the pink and stripped weight from everything else: a light, widely-spaced Garamond, a single weight, and a fixed ratio across every piece — 70% white, 20% blush, 10% pink.",
-      solution:
-        "A system that holds up the same on a 20cm box, a 45mm stamp, and a storefront awning, and that lets the cake stay the most eye-catching part of the piece. In use since 2026 at the Francisco Villa 21 location.",
-      sections: [
-        {
-          title: "Brand Identity",
-          images: [
-            { src: "/projects/candies-case-study/identity-01-logotype.jpg", caption: "The primary logotype — a light, high-contrast Garamond with wide spacing and no ornament." },
-            { src: "/projects/candies-case-study/identity-02-versions.jpg", caption: "Primary, vertical, monogram, and negative versions for different placements." },
-            { src: "/projects/candies-case-study/identity-03-usage-rules.jpg", caption: "Clear space and minimum size — and what never to do to the mark." },
-            { src: "/projects/candies-case-study/identity-04-color.jpg", caption: "Pink, blush, bone, and cacao — kept to a fixed 70/20/10 ratio across every piece." },
-            { src: "/projects/candies-case-study/identity-05-typography.jpg", caption: "Cormorant Garamond for warmth, Jost for anything functional — both kept light." },
-            { src: "/projects/candies-case-study/identity-06-voice.jpg", caption: "What the brand says and doesn't say, plus the tagline: \"Hecho en casa, desde 2014.\"" },
-            { src: "/projects/candies-case-study/identity-07-applications-overview.jpg", caption: "How the system holds across box sizes, the stamp, signage, menu, and business card." },
-          ],
-        },
-        {
-          title: "Storefront",
-          images: [
-            { src: "/projects/candies-case-study/storefront-toldo-photo.jpg", caption: "The awning — a plain pink canopy, logo and lema in white, nothing else competing for attention." },
-          ],
-        },
-        {
-          title: "Individual Box — 12cm",
-          images: [
-            { src: "/projects/candies-case-study/individual-01-box-render.jpg", caption: "Closed, it reads almost entirely white — the brand stays quiet on purpose." },
-            { src: "/projects/candies-case-study/individual-02-diecut.jpg", caption: "Die-cut plan, ready to hand to a printer." },
-            { src: "/projects/candies-case-study/individual-03-specs.jpg", caption: "Print specifications — stock, ink, minimum sizes, and what never to do." },
-          ],
-        },
-        {
-          title: "Large Box — 20cm",
-          images: [
-            { src: "/projects/candies-case-study/large-01-box-render.jpg", caption: "The only piece that carries a ribbon — reserved for full cakes." },
-            { src: "/projects/candies-case-study/large-02-diecut.jpg", caption: "Die-cut plan for the large box." },
-            { src: "/projects/candies-case-study/large-03-specs.jpg", caption: "Print specifications, including reinforcement for heavier cakes." },
-          ],
-        },
-        {
-          title: "Papelería",
-          images: [
-            { src: "/projects/candies-case-study/papeleria-carta-photo.jpg", caption: "The counter menu, shot on-site — full price list organized by category." },
-            { src: "/projects/candies-case-study/papeleria-flyer-photo.jpg", caption: "A neighborhood flyer for local delivery, built on the same grid as the menu." },
-            { src: "/projects/candies-case-study/papeleria-tarjeta-photo.jpg", caption: "The business card, front and back — 90×50mm." },
-          ],
-        },
-        {
-          title: "Deliverables",
-          images: [
-            { src: "/projects/candies-case-study/closing-deliverables.jpg", caption: "What was handed off: brand manual, packaging system, papelería, and logo files." },
-          ],
-        },
-      ],
-    },
-    link: "",
-  },
-  {
     id: "prj_08",
     code: "PRJ_00",
     timecode: "00:00:12:04",
@@ -153,6 +80,79 @@ export const projects = [
             { src: "/projects/basher-case-study/03-services.jpg", caption: "Services — audit, tax compliance, and accounting advisory, laid out as an expandable list." },
             { src: "/projects/basher-case-study/04-careers.jpg", caption: "Careers page for the firm's hiring." },
             { src: "/projects/basher-case-study/05-contact.jpg", caption: "Contact — direct line to the partner, not a generic inbox." },
+          ],
+        },
+      ],
+    },
+    link: "",
+  },
+  {
+    id: "prj_09",
+    code: "PRJ_00",
+    timecode: "00:00:06:02",
+    title: "Candies",
+    type: "Brand Identity",
+    year: "2026",
+    category: "design",
+    blurb: "Identity for a home bakery in Cuajimalpa, Mexico City — same pink, different attitude.",
+    tags: ["Branding", "Packaging", "Typography"],
+    media: "/projects/candies.mp4",
+    mediaType: "video",
+    poster: "/projects/candies-poster.jpg",
+    caseStudy: {
+      problem:
+        "Candies has been baking out of the house since 2014, and already had a white-and-pink logo — but it read as childish and competed with the product itself. It needed to feel elegant without losing the pink the customers already recognize.",
+      research:
+        "Kept the pink and stripped weight from everything else: a light, widely-spaced Garamond, a single weight, and a fixed ratio across every piece — 70% white, 20% blush, 10% pink.",
+      solution:
+        "A system that holds up the same on a 20cm box, a 45mm stamp, and a storefront awning, and that lets the cake stay the most eye-catching part of the piece. In use since 2026 at the Francisco Villa 21 location.",
+      sections: [
+        {
+          title: "Brand Identity",
+          images: [
+            { src: "/projects/candies-case-study/identity-01-logotype.jpg", caption: "The primary logotype — a light, high-contrast Garamond with wide spacing and no ornament." },
+            { src: "/projects/candies-case-study/identity-02-versions.jpg", caption: "Primary, vertical, monogram, and negative versions for different placements." },
+            { src: "/projects/candies-case-study/identity-03-usage-rules.jpg", caption: "Clear space and minimum size — and what never to do to the mark." },
+            { src: "/projects/candies-case-study/identity-04-color.jpg", caption: "Pink, blush, bone, and cacao — kept to a fixed 70/20/10 ratio across every piece." },
+            { src: "/projects/candies-case-study/identity-05-typography.jpg", caption: "Cormorant Garamond for warmth, Jost for anything functional — both kept light." },
+            { src: "/projects/candies-case-study/identity-06-voice.jpg", caption: "What the brand says and doesn't say, plus the tagline: \"Hecho en casa, desde 2014.\"" },
+            { src: "/projects/candies-case-study/identity-07-applications-overview.jpg", caption: "How the system holds across box sizes, the stamp, signage, menu, and business card." },
+          ],
+        },
+        {
+          title: "Storefront",
+          images: [
+            { src: "/projects/candies-case-study/storefront-toldo-photo.jpg", caption: "The awning — a plain pink canopy, logo and lema in white, nothing else competing for attention." },
+          ],
+        },
+        {
+          title: "Individual Box — 12cm",
+          images: [
+            { src: "/projects/candies-case-study/individual-01-box-render.jpg", caption: "Closed, it reads almost entirely white — the brand stays quiet on purpose." },
+            { src: "/projects/candies-case-study/individual-02-diecut.jpg", caption: "Die-cut plan, ready to hand to a printer." },
+            { src: "/projects/candies-case-study/individual-03-specs.jpg", caption: "Print specifications — stock, ink, minimum sizes, and what never to do." },
+          ],
+        },
+        {
+          title: "Large Box — 20cm",
+          images: [
+            { src: "/projects/candies-case-study/large-01-box-render.jpg", caption: "The only piece that carries a ribbon — reserved for full cakes." },
+            { src: "/projects/candies-case-study/large-02-diecut.jpg", caption: "Die-cut plan for the large box." },
+            { src: "/projects/candies-case-study/large-03-specs.jpg", caption: "Print specifications, including reinforcement for heavier cakes." },
+          ],
+        },
+        {
+          title: "Papelería",
+          images: [
+            { src: "/projects/candies-case-study/papeleria-carta-photo.jpg", caption: "The counter menu, shot on-site — full price list organized by category." },
+            { src: "/projects/candies-case-study/papeleria-flyer-photo.jpg", caption: "A neighborhood flyer for local delivery, built on the same grid as the menu." },
+            { src: "/projects/candies-case-study/papeleria-tarjeta-photo.jpg", caption: "The business card, front and back — 90×50mm." },
+          ],
+        },
+        {
+          title: "Deliverables",
+          images: [
+            { src: "/projects/candies-case-study/closing-deliverables.jpg", caption: "What was handed off: brand manual, packaging system, papelería, and logo files." },
           ],
         },
       ],

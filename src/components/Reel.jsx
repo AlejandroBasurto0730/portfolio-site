@@ -1,55 +1,60 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useLanguage } from "../LanguageContext";
-import { useReveal } from "../hooks/useReveal";
 
 const COPY = {
-  en: { label: "Demo reel", title: "Reel, 2026", sub: "Brand and motion work in 34 seconds.", play: "Play reel" },
-  es: { label: "Demo reel", title: "Reel, 2026", sub: "Trabajo de marca y motion en 34 segundos.", play: "Reproducir reel" },
+  en: { label: "Demo reel · 34 s", soundOn: "Sound on", soundOff: "Sound off" },
+  es: { label: "Demo reel · 34 s", soundOn: "Activar sonido", soundOff: "Silenciar" },
 };
 
+// Hero reel: starts muted and looping as soon as it is on screen.
+// Sound is opt-in with one tap.
 export default function Reel() {
   const { lang } = useLanguage();
   const c = COPY[lang];
-  const [ref, visible] = useReveal();
   const videoRef = useRef(null);
-  const [playing, setPlaying] = useState(false);
+  const [muted, setMuted] = useState(true);
 
-  const start = () => {
+  useEffect(() => {
+    const v = videoRef.current;
+    if (!v) return undefined;
+    const io = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting) v.play().catch(() => {});
+      else v.pause();
+    });
+    io.observe(v);
+    return () => io.disconnect();
+  }, []);
+
+  const toggleSound = () => {
     const v = videoRef.current;
     if (!v) return;
-    setPlaying(true);
-    v.muted = false;
-    v.play().catch(() => {
-      v.muted = true;
+    const next = !muted;
+    v.muted = next;
+    if (!next) {
+      v.currentTime = 0;
       v.play().catch(() => {});
-    });
+    }
+    setMuted(next);
   };
 
   return (
-    <section id="reel" className="reel">
-      <div className="container">
-        <div ref={ref} className={`reel-head ${visible ? "is-visible" : ""}`}>
-          <span className="section-no">{c.label}</span>
-          <p className="reel-sub">{c.sub}</p>
-        </div>
-        <div className="reel-frame">
-          <video
-            ref={videoRef}
-            src="/projects/demo-reel.mp4"
-            poster="/projects/demo-reel-poster.jpg"
-            controls={playing}
-            playsInline
-            preload="none"
-            onEnded={() => setPlaying(false)}
-          />
-          {!playing && (
-            <button type="button" className="reel-play" onClick={start} aria-label={c.play}>
-              <span>▶</span>
-              {c.play}
-            </button>
-          )}
-        </div>
+    <div className="reel-hero">
+      <div className="reel-frame">
+        <video
+          ref={videoRef}
+          src="/projects/demo-reel.mp4"
+          poster="/projects/demo-reel-poster.jpg"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+        />
+        <button type="button" className="reel-sound" onClick={toggleSound} aria-pressed={!muted}>
+          {muted ? c.soundOn : c.soundOff}
+        </button>
       </div>
-    </section>
+      <span className="reel-label">{c.label}</span>
+    </div>
   );
 }

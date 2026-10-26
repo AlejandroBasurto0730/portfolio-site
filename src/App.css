@@ -1907,3 +1907,19 @@ section {
 
 /* Small uppercase labels: sans, semi-bold (no monospace) */
 .mono, .section-no, .hero-visual-label { font-weight: 600; }
+
+/* Hero reel */
+.reel-hero{display:flex;flex-direction:column;gap:12px}
+.reel-hero .reel-frame{box-shadow:0 30px 90px rgba(43,140,255,.12)}
+.reel-label{font-family:var(--font-body);font-weight:600;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.reel-sound{position:absolute;right:14px;bottom:14px;padding:9px 16px;border:0;border-radius:999px;background:rgba(10,10,12,.72);color:#fff;font:inherit;font-size:.85rem;font-weight:600;cursor:pointer;backdrop-filter:blur(6px)}
+.reel-sound:hover{background:var(--accent)}
+
+/* Compact hero so the reel starts in the first screen */
+.hero{padding-top:96px;padding-bottom:40px}
+.hero-eyebrow{margin-bottom:14px}
+.hero-title{font-size:clamp(52px,9vw,132px);margin-bottom:18px}
+.hero-sub{margin:0 0 20px;font-size:clamp(16px,1.6vw,19px)}
+.hero-actions{margin:0 0 28px}
+.hero-visual{margin-top:0}
+@media (max-width:600px){.hero{padding-top:84px}.hero-sub{font-size:15.5px}}
