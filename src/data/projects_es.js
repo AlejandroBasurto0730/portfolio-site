@@ -149,6 +149,14 @@ export const projectsEs = {
         "Gráficas para Instagram y LinkedIn; perfiles del personal actualizados en crowe.com con Sitecore; el boletín Automotive Weekly en Mailchimp; la intro animada de un video de entrevista de Crowe Master Series (los primeros cinco segundos; la entrevista no fue mía); un carrusel de reclutamiento universitario; y apoyo de diseño a mi supervisor en otro video que yo no edité.",
       sections: [
         {
+          title: "Publicaciones animadas",
+          images: [
+            "Cuatro nuevos socios anunciados en una sola publicación animada, una tarjeta por persona.",
+            "Gerentes recién promovidos, oficina de Calgary: una tarjeta de título y luego cada gerente.",
+            "La tarjeta de cita del director general del set estático, animada para el feed.",
+          ],
+        },
+        {
           title: "Gráficas para redes",
           images: [
             "Tarjeta de cita del director general de la firma, dentro de la plantilla de marca de Crowe.",

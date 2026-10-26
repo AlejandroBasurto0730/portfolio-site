@@ -182,6 +182,14 @@ export const projects = [
         "Social graphics for Instagram and LinkedIn; updated staff profile pages on crowe.com in Sitecore; the Automotive Weekly newsletter in Mailchimp; the animated intro for a Crowe Master Series interview video (the first five seconds of the video; the interview itself was not mine); a campus recruiting carousel; and design support to my supervisor on another video that I did not edit.",
       sections: [
         {
+          title: "Animated social posts",
+          images: [
+            { src: "/projects/crowe-mackay/anim-new-partners.mp4", type: "video", poster: "/projects/crowe-mackay/anim-new-partners-poster.jpg", caption: "Four new partners announced in one animated post, one card per person." },
+            { src: "/projects/crowe-mackay/anim-promoted-managers.mp4", type: "video", poster: "/projects/crowe-mackay/anim-promoted-managers-poster.jpg", caption: "Newly promoted managers, Calgary office: a title card followed by each manager." },
+            { src: "/projects/crowe-mackay/anim-ceo-quote.mp4", type: "video", poster: "/projects/crowe-mackay/anim-ceo-quote-poster.jpg", caption: "The CEO quote card from the static set, animated for the feed." },
+          ],
+        },
+        {
           title: "Social graphics",
           images: [
             { src: "/projects/crowe-mackay/01-ceo.jpg", caption: "Leadership quote card for the firm's CEO, set inside the Crowe brand template." },
