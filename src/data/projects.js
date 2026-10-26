@@ -169,9 +169,9 @@ export const projects = [
     category: "design",
     blurb: "Social graphics, staff web profiles and a weekly newsletter for a national professional services firm, made as the in-house designer on the marketing team.",
     tags: ["Social Media", "Sitecore", "Newsletter", "Corporate"],
-    media: "/projects/crowe-mackay/master-series-intro.mp4",
+    media: "/projects/crowe-mackay/crowe-thumb.mp4",
     mediaType: "video",
-    poster: "/projects/crowe-mackay/master-series-intro-poster.jpg",
+    poster: "/projects/crowe-mackay/crowe-thumb-poster.jpg",
     link: "",
     caseStudy: {
       problem:

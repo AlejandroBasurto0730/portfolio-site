@@ -127,7 +127,7 @@ export default function ProjectModal({ project, onClose, origin }) {
                           onClick={() => setZoomed({ type: "video", src, poster, orientation })}
                           aria-label="Play larger"
                         >
-                          <video src={src} poster={poster} muted loop playsInline preload="metadata" />
+                          <video src={src} poster={poster} autoPlay muted loop playsInline preload="auto" />
                           <span className="modal-image-expand" aria-hidden="true">
                             ⤢
                           </span>
