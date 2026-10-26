@@ -157,6 +157,15 @@ export const projectsEs = {
           ],
         },
         {
+          title: "Perfiles del personal",
+          images: [
+            "Encabezado de perfil en crowe.com: foto, nombre, credenciales, cargo y oficina.",
+            "Resumen profesional, afiliaciones y educación, armados en Sitecore.",
+            "La misma plantilla para un perfil de la oficina de Kelowna.",
+            "Un perfil más largo con secciones de participación comunitaria y áreas de servicio.",
+          ],
+        },
+        {
           title: "Reclutamiento universitario",
           images: [
             "Portada del carrusel de reclutamiento para estudiantes, con el hashtag y una invitación a deslizar.",

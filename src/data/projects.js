@@ -190,6 +190,15 @@ export const projects = [
           ],
         },
         {
+          title: "Staff profile pages",
+          images: [
+            { src: "/projects/crowe-mackay/profile-1-header.jpg", caption: "Profile header on crowe.com: photo, name, credentials, title and office." },
+            { src: "/projects/crowe-mackay/profile-1-summary.jpg", caption: "Professional summary, affiliations and education, laid out in Sitecore." },
+            { src: "/projects/crowe-mackay/profile-2-header.jpg", caption: "The same template for a Kelowna office profile." },
+            { src: "/projects/crowe-mackay/profile-2-summary.jpg", caption: "Longer profile with community involvement and service focus sections." },
+          ],
+        },
+        {
           title: "Campus recruiting",
           images: [
             { src: "/projects/crowe-mackay/07-students.jpg", caption: "Cover for the student recruiting carousel, with the hashtag and a swipe prompt." },
