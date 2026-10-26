@@ -169,8 +169,9 @@ export const projects = [
     category: "design",
     blurb: "Social graphics, staff web profiles and a weekly newsletter for a national professional services firm, made as the in-house designer on the marketing team.",
     tags: ["Social Media", "Sitecore", "Newsletter", "Corporate"],
-    media: "/projects/crowe-mackay/01-ceo.jpg",
-    mediaType: "image",
+    media: "/projects/crowe-mackay/master-series-intro.mp4",
+    mediaType: "video",
+    poster: "/projects/crowe-mackay/master-series-intro-poster.jpg",
     link: "",
     caseStudy: {
       problem:
@@ -178,7 +179,7 @@ export const projects = [
       research:
         "Everything had to live inside Crowe's existing brand system, so the work was about layout, hierarchy and speed: reusable templates for announcements, with the person's photo and name as the focus.",
       solution:
-        "Social graphics for Instagram and LinkedIn; updated staff profile pages on crowe.com in Sitecore; the Automotive Weekly newsletter in Mailchimp; the intro for a Crowe Master Series interview video; and design support to my supervisor on another video that I did not edit.",
+        "Social graphics for Instagram and LinkedIn; updated staff profile pages on crowe.com in Sitecore; the Automotive Weekly newsletter in Mailchimp; the animated intro for a Crowe Master Series interview video (the first five seconds of the video; the interview itself was not mine); a campus recruiting carousel; and design support to my supervisor on another video that I did not edit.",
       sections: [
         {
           title: "Social graphics",
@@ -189,6 +190,16 @@ export const projects = [
             { src: "/projects/crowe-mackay/04-congrats.jpg", caption: "Welcome and congratulations card for the Vancouver office." },
             { src: "/projects/crowe-mackay/05-promoted.jpg", caption: "Promotion announcement for the Calgary office, opening card." },
             { src: "/projects/crowe-mackay/06-manager.jpg", caption: "Individual manager card from the same promotion series." },
+          ],
+        },
+        {
+          title: "Campus recruiting",
+          images: [
+            { src: "/projects/crowe-mackay/07-students.jpg", caption: "Cover for the student recruiting carousel, with the hashtag and a swipe prompt." },
+            { src: "/projects/crowe-mackay/08-vancouver.jpg", caption: "Vancouver: three events, each with venue, date and time in a fixed three-line pattern." },
+            { src: "/projects/crowe-mackay/09-kelowna.jpg", caption: "Kelowna: the same layout with two events, so the set reads as one system." },
+            { src: "/projects/crowe-mackay/10-edmonton.jpg", caption: "Edmonton: time zone changes to MST, everything else stays locked." },
+            { src: "/projects/crowe-mackay/11-calgary.jpg", caption: "Calgary: closing card of the carousel." },
           ],
         },
       ],

@@ -146,7 +146,7 @@ export const projectsEs = {
       research:
         "Todo debía vivir dentro del sistema de marca de Crowe, así que el trabajo fue de composición, jerarquía y velocidad: plantillas reutilizables para anuncios, con la foto y el nombre de la persona como protagonistas.",
       solution:
-        "Gráficas para Instagram y LinkedIn; perfiles del personal actualizados en crowe.com con Sitecore; el boletín Automotive Weekly en Mailchimp; la intro de un video de entrevista de Crowe Master Series; y apoyo de diseño a mi supervisor en otro video que yo no edité.",
+        "Gráficas para Instagram y LinkedIn; perfiles del personal actualizados en crowe.com con Sitecore; el boletín Automotive Weekly en Mailchimp; la intro animada de un video de entrevista de Crowe Master Series (los primeros cinco segundos; la entrevista no fue mía); un carrusel de reclutamiento universitario; y apoyo de diseño a mi supervisor en otro video que yo no edité.",
       sections: [
         {
           title: "Gráficas para redes",
@@ -157,6 +157,16 @@ export const projectsEs = {
             "Tarjeta de bienvenida y felicitación para la oficina de Vancouver.",
             "Anuncio de promociones para la oficina de Calgary, tarjeta de apertura.",
             "Tarjeta individual de una gerente de la misma serie de promociones.",
+          ],
+        },
+        {
+          title: "Reclutamiento universitario",
+          images: [
+            "Portada del carrusel de reclutamiento para estudiantes, con el hashtag y una invitación a deslizar.",
+            "Vancouver: tres eventos, cada uno con lugar, fecha y hora en un patrón fijo de tres líneas.",
+            "Kelowna: el mismo diseño con dos eventos, para que el conjunto se lea como un sistema.",
+            "Edmonton: cambia la zona horaria a MST, todo lo demás queda fijo.",
+            "Calgary: tarjeta de cierre del carrusel.",
           ],
         },
       ],
