@@ -135,6 +135,34 @@ export const projectsEs = {
     },
   },
 
+  prj_11: {
+    // Crowe MacKay
+    type: "Contenido Social y Web",
+    blurb: "Gráficas para redes, perfiles web del personal y un boletín semanal para una firma nacional de servicios profesionales, como diseñador interno del equipo de marketing.",
+    tags: ["Redes Sociales", "Sitecore", "Boletín", "Corporativo"],
+    caseStudy: {
+      problem:
+        "Una firma nacional con oficinas en todo Canadá necesitaba un flujo constante de contenido de marca: promociones, bienvenidas, citas de liderazgo y cifras de impacto, además de páginas de personal actualizadas y un boletín semanal del sector.",
+      research:
+        "Todo debía vivir dentro del sistema de marca de Crowe, así que el trabajo fue de composición, jerarquía y velocidad: plantillas reutilizables para anuncios, con la foto y el nombre de la persona como protagonistas.",
+      solution:
+        "Gráficas para Instagram y LinkedIn; perfiles del personal actualizados en crowe.com con Sitecore; el boletín Automotive Weekly en Mailchimp; la intro de un video de entrevista de Crowe Master Series; y apoyo de diseño a mi supervisor en otro video que yo no edité.",
+      sections: [
+        {
+          title: "Gráficas para redes",
+          images: [
+            "Tarjeta de cita del director general de la firma, dentro de la plantilla de marca de Crowe.",
+            "Cifras de impacto comunitario convertidas en un solo diseño fácil de leer.",
+            "Saludo de temporada por el Año Nuevo Lunar.",
+            "Tarjeta de bienvenida y felicitación para la oficina de Vancouver.",
+            "Anuncio de promociones para la oficina de Calgary, tarjeta de apertura.",
+            "Tarjeta individual de una gerente de la misma serie de promociones.",
+          ],
+        },
+      ],
+    },
+  },
+
   prj_02: {
     // OEIL
     type: "Manual de Marca",

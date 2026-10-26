@@ -69,7 +69,7 @@ export const t = {
     },
     about: {
       title: "About",
-      p1: "I'm a graphic and motion designer based in North Vancouver, BC, with a Bachelor's in Multimedia Design and BCIT diplomas in Graphic Design and in Video Editing and Production. My work sits at the intersection of brand identity and motion — I care about systems that hold up whether they're printed, animated, or scrolled.",
+      p1: "I'm a graphic and motion designer based in North Vancouver, BC, with BCIT certificates in Graphic Design and in Video Editing and Production, after studying Multimedia Design at Universidad Anáhuac. My work sits at the intersection of brand identity and motion — I care about systems that hold up whether they're printed, animated, or scrolled.",
       p2: "I spent two years as the in-house designer at Crowe MacKay LLP, a national professional services firm, producing web, email, social, video, and event materials and publishing them in Sitecore and Mailchimp. Before that I interned at Henkel in Mexico, and today I edit social videos for House of Knives. On the side I build self-directed projects — brand systems, editorial redesigns, and motion reels — to keep pushing what I can make.",
       p3: "Currently open to graphic design and marketing roles focused on brand design and motion graphics. I work in Spanish and English, and I'm learning French.",
     },
@@ -82,7 +82,7 @@ export const t = {
       designItems: ["Brand Identity", "Typography", "Print & Packaging", "Editorial Layout", "Social Media Content"],
       motionItems: ["After Effects", "Premiere Pro", "Kinetic Type", "Short-Form Edit"],
       toolsItems: ["Illustrator, Photoshop, InDesign", "Figma", "Sitecore CMS, Mailchimp", "HTML & CSS"],
-      educationItems: ["Bachelor's, Multimedia Design — Universidad Anáhuac México", "Diploma, Graphic Design — BCIT", "Diploma, Video Editing & Production — BCIT", "Spanish · English (IELTS C1) · French (A2–B1)"],
+      educationItems: ["Multimedia Design (2019–2023) — Universidad Anáhuac México", "Certificate, Graphic Design — BCIT", "Associate Certificate, Video Production & Editing — BCIT", "Spanish · English (IELTS C1) · French (A2–B1)"],
     },
     contact: {
       title: "Contact",
@@ -135,7 +135,7 @@ export const t = {
     },
     about: {
       title: "Sobre mí",
-      p1: "Soy diseñador gráfico y de motion, radicado en North Vancouver, BC, con una licenciatura en Diseño Multimedia y diplomas de BCIT en Diseño Gráfico y en Edición y Producción de Video. Mi trabajo vive en el cruce entre identidad de marca y motion — me importan los sistemas que funcionan igual de bien impresos, animados, o navegando en pantalla.",
+      p1: "Soy diseñador gráfico y de motion, radicado en North Vancouver, BC, con certificados de BCIT en Diseño Gráfico y en Edición y Producción de Video, tras estudiar Diseño Multimedia en la Universidad Anáhuac. Mi trabajo vive en el cruce entre identidad de marca y motion — me importan los sistemas que funcionan igual de bien impresos, animados, o navegando en pantalla.",
       p2: "Pasé dos años como diseñador in-house en Crowe MacKay LLP, una firma nacional de servicios profesionales, produciendo materiales web, de correo, redes, video y eventos, y publicándolos en Sitecore y Mailchimp. Antes hice una pasantía en Henkel en México, y hoy edito videos para redes de House of Knives. Aparte construyo proyectos propios — sistemas de marca, rediseños editoriales y reels de motion — para seguir exigiéndome.",
       p3: "Actualmente abierto a roles de diseño gráfico y marketing enfocados en diseño de marca y motion graphics. Trabajo en español e inglés, y estoy aprendiendo francés.",
     },
@@ -148,7 +148,7 @@ export const t = {
       designItems: ["Identidad de Marca", "Tipografía", "Impresión y Empaque", "Layout Editorial", "Contenido para Redes"],
       motionItems: ["After Effects", "Premiere Pro", "Tipografía Cinética", "Edición Short-Form"],
       toolsItems: ["Illustrator, Photoshop, InDesign", "Figma", "Sitecore CMS, Mailchimp", "HTML y CSS"],
-      educationItems: ["Licenciatura, Diseño Multimedia — Universidad Anáhuac México", "Diploma, Diseño Gráfico — BCIT", "Diploma, Edición y Producción de Video — BCIT", "Español · Inglés (IELTS C1) · Francés (A2–B1)"],
+      educationItems: ["Diseño Multimedia (2019–2023) — Universidad Anáhuac México", "Certificado, Diseño Gráfico — BCIT", "Certificado Asociado, Producción y Edición de Video — BCIT", "Español · Inglés (IELTS C1) · Francés (A2–B1)"],
     },
     contact: {
       title: "Contacto",

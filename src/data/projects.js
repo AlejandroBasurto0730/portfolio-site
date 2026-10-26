@@ -160,6 +160,42 @@ export const projects = [
     link: "",
   },
   {
+    id: "prj_11",
+    code: "PRJ_CM",
+    timecode: "00:00:12:00",
+    title: "Crowe MacKay",
+    type: "Social & Web Content",
+    year: "2025",
+    category: "design",
+    blurb: "Social graphics, staff web profiles and a weekly newsletter for a national professional services firm, made as the in-house designer on the marketing team.",
+    tags: ["Social Media", "Sitecore", "Newsletter", "Corporate"],
+    media: "/projects/crowe-mackay/01-ceo.jpg",
+    mediaType: "image",
+    link: "",
+    caseStudy: {
+      problem:
+        "A national firm with offices across Canada needed a steady flow of on-brand content: promotions, welcomes, leadership quotes and community numbers, plus up-to-date staff pages and a weekly industry newsletter.",
+      research:
+        "Everything had to live inside Crowe's existing brand system, so the work was about layout, hierarchy and speed: reusable templates for announcements, with the person's photo and name as the focus.",
+      solution:
+        "Social graphics for Instagram and LinkedIn; updated staff profile pages on crowe.com in Sitecore; the Automotive Weekly newsletter in Mailchimp; the intro for a Crowe Master Series interview video; and design support to my supervisor on another video that I did not edit.",
+      sections: [
+        {
+          title: "Social graphics",
+          images: [
+            { src: "/projects/crowe-mackay/01-ceo.jpg", caption: "Leadership quote card for the firm's CEO, set inside the Crowe brand template." },
+            { src: "/projects/crowe-mackay/02-impact.jpg", caption: "Community-impact numbers turned into a single, scannable layout." },
+            { src: "/projects/crowe-mackay/03-lunar.jpg", caption: "Seasonal greeting for Lunar New Year." },
+            { src: "/projects/crowe-mackay/04-congrats.jpg", caption: "Welcome and congratulations card for the Vancouver office." },
+            { src: "/projects/crowe-mackay/05-promoted.jpg", caption: "Promotion announcement for the Calgary office, opening card." },
+            { src: "/projects/crowe-mackay/06-manager.jpg", caption: "Individual manager card from the same promotion series." },
+          ],
+        },
+      ],
+      liveUrl: "https://www.crowe.com/ca/crowemackay/insights/automotive-weekly",
+    },
+  },
+  {
     id: "prj_02",
     code: "PRJ_01",
     timecode: "00:01:08:03",
