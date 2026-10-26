@@ -167,7 +167,7 @@ export const projects = [
     type: "Social & Web Content",
     year: "2025",
     category: "design",
-    blurb: "Social graphics, staff web profiles and a weekly newsletter for a national professional services firm, made as the in-house designer on the marketing team.",
+    blurb: "Animated social posts, staff web profiles and a weekly newsletter for a national professional services firm, made as the in-house designer on the marketing team.",
     tags: ["Social Media", "Sitecore", "Newsletter", "Corporate"],
     media: "/projects/crowe-mackay/crowe-thumb.mp4",
     mediaType: "video",
@@ -179,14 +179,14 @@ export const projects = [
       research:
         "Everything had to live inside Crowe's existing brand system, so the work was about layout, hierarchy and speed: reusable templates for announcements, with the person's photo and name as the focus.",
       solution:
-        "Social graphics for Instagram and LinkedIn; updated staff profile pages on crowe.com in Sitecore; the Automotive Weekly newsletter in Mailchimp; the animated intro for a Crowe Master Series interview video (the first five seconds of the video; the interview itself was not mine); a campus recruiting carousel; and design support to my supervisor on another video that I did not edit.",
+        "Animated social posts for Instagram and LinkedIn, built on the firm's existing video backgrounds, with the text and portraits animated by me; updated staff profile pages on crowe.com in Sitecore; the Automotive Weekly newsletter in Mailchimp; the animated intro for a Crowe Master Series interview video (the first five seconds of the video; the interview itself was not mine); a campus recruiting carousel; and design support to my supervisor on another video that I did not edit.",
       sections: [
         {
           title: "Animated social posts",
           images: [
-            { src: "/projects/crowe-mackay/anim-new-partners.mp4", type: "video", poster: "/projects/crowe-mackay/anim-new-partners-poster.jpg", caption: "Four new partners announced in one animated post, one card per person." },
-            { src: "/projects/crowe-mackay/anim-promoted-managers.mp4", type: "video", poster: "/projects/crowe-mackay/anim-promoted-managers-poster.jpg", caption: "Newly promoted managers, Calgary office: a title card followed by each manager." },
-            { src: "/projects/crowe-mackay/anim-ceo-quote.mp4", type: "video", poster: "/projects/crowe-mackay/anim-ceo-quote-poster.jpg", caption: "The CEO quote card from the static set, animated for the feed." },
+            { src: "/projects/crowe-mackay/anim-new-partners.mp4", type: "video", poster: "/projects/crowe-mackay/anim-new-partners-poster.jpg", caption: "Four new partners announced in one animated post. The background came from the firm's existing video template; I animated the text and the portraits." },
+            { src: "/projects/crowe-mackay/anim-promoted-managers.mp4", type: "video", poster: "/projects/crowe-mackay/anim-promoted-managers-poster.jpg", caption: "Newly promoted managers, Calgary office. Same approach: firm template background, with the text and each manager's portrait animated by me." },
+            { src: "/projects/crowe-mackay/anim-ceo-quote.mp4", type: "video", poster: "/projects/crowe-mackay/anim-ceo-quote-poster.jpg", caption: "CEO quote card animated for the feed: the quote text and portrait are animated over the firm's template background." },
           ],
         },
         {
@@ -226,7 +226,7 @@ export const projects = [
     code: "PRJ_01",
     timecode: "00:01:08:03",
     title: "OEIL",
-    type: "Brand Guidelines",
+    type: "Brand Guidelines · Personal project",
     year: "2025",
     category: "design",
     blurb:
@@ -302,7 +302,7 @@ export const projects = [
     code: "PRJ_02",
     timecode: "00:02:41:19",
     title: "Apple — Sustainability Report",
-    type: "Editorial Redesign",
+    type: "Editorial Redesign · Personal project",
     year: "2025",
     category: "design",
     blurb:

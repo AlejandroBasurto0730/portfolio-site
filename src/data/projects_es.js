@@ -138,7 +138,7 @@ export const projectsEs = {
   prj_11: {
     // Crowe MacKay
     type: "Contenido Social y Web",
-    blurb: "Gráficas para redes, perfiles web del personal y un boletín semanal para una firma nacional de servicios profesionales, como diseñador interno del equipo de marketing.",
+    blurb: "Publicaciones animadas para redes, perfiles web del personal y un boletín semanal para una firma nacional de servicios profesionales, como diseñador interno del equipo de marketing.",
     tags: ["Redes Sociales", "Sitecore", "Boletín", "Corporativo"],
     caseStudy: {
       problem:
@@ -146,14 +146,14 @@ export const projectsEs = {
       research:
         "Todo debía vivir dentro del sistema de marca de Crowe, así que el trabajo fue de composición, jerarquía y velocidad: plantillas reutilizables para anuncios, con la foto y el nombre de la persona como protagonistas.",
       solution:
-        "Gráficas para Instagram y LinkedIn; perfiles del personal actualizados en crowe.com con Sitecore; el boletín Automotive Weekly en Mailchimp; la intro animada de un video de entrevista de Crowe Master Series (los primeros cinco segundos; la entrevista no fue mía); un carrusel de reclutamiento universitario; y apoyo de diseño a mi supervisor en otro video que yo no edité.",
+        "Publicaciones animadas para Instagram y LinkedIn, sobre los fondos de video existentes de la firma, con el texto y los retratos animados por mí; perfiles del personal actualizados en crowe.com con Sitecore; el boletín Automotive Weekly en Mailchimp; la intro animada de un video de entrevista de Crowe Master Series (los primeros cinco segundos; la entrevista no fue mía); un carrusel de reclutamiento universitario; y apoyo de diseño a mi supervisor en otro video que yo no edité.",
       sections: [
         {
           title: "Publicaciones animadas",
           images: [
-            "Cuatro nuevos socios anunciados en una sola publicación animada, una tarjeta por persona.",
-            "Gerentes recién promovidos, oficina de Calgary: una tarjeta de título y luego cada gerente.",
-            "La tarjeta de cita del director general del set estático, animada para el feed.",
+            "Cuatro nuevos socios anunciados en una sola publicación animada. El fondo venía de la plantilla de video de la firma; yo animé el texto y los retratos.",
+            "Gerentes recién promovidos, oficina de Calgary. Mismo enfoque: fondo de la plantilla de la firma, con el texto y el retrato de cada gerente animados por mí.",
+            "Tarjeta de cita del director general animada para el feed: el texto y el retrato están animados sobre el fondo de la plantilla de la firma.",
           ],
         },
         {
@@ -190,7 +190,7 @@ export const projectsEs = {
 
   prj_02: {
     // OEIL
-    type: "Manual de Marca",
+    type: "Manual de Marca · Proyecto personal",
     blurb: "Un manual de marca de 25 páginas para una boutique de optometría en el este de Vancouver: concepto, voz, color, logo, tipografía y cada punto de contacto.",
     tags: ["Branding", "Guidelines"],
     caseStudy: {
@@ -256,7 +256,7 @@ export const projectsEs = {
 
   prj_03: {
     // Apple Sustainability Report
-    type: "Rediseño Editorial",
+    type: "Rediseño Editorial · Proyecto personal",
     blurb: "Rediseño autoiniciado del Reporte de Progreso Ambiental de Apple — retícula, tipografía, y visualización de datos.",
     tags: ["Editorial", "Layout", "Visualización de Datos"],
     caseStudy: {
