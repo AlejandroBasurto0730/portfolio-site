@@ -157,6 +157,15 @@ export const projectsEs = {
           ],
         },
         {
+          title: "Automotive Weekly",
+          images: [
+            "Encabezado del boletín semanal del sector en crowe.com, con la imagen de banner y la primera nota.",
+            "Diseño de una nota: titular, línea de resumen y cuerpo de texto.",
+            "Cada nota sigue el mismo patrón, con una línea dorada bajo el titular.",
+            "Cada nota cierra con su fuente. Cada semana salía una edición nueva.",
+          ],
+        },
+        {
           title: "Perfiles del personal",
           images: [
             "Encabezado de perfil en crowe.com: foto, nombre, credenciales, cargo y oficina.",

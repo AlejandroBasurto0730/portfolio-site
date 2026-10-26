@@ -190,6 +190,15 @@ export const projects = [
           ],
         },
         {
+          title: "Automotive Weekly",
+          images: [
+            { src: "/projects/crowe-mackay/aw-1-header.jpg", caption: "Header of the weekly industry newsletter on crowe.com, with the banner image and first story." },
+            { src: "/projects/crowe-mackay/aw-2-stellantis.jpg", caption: "Story layout with a headline, a summary line and body copy." },
+            { src: "/projects/crowe-mackay/aw-3-ford.jpg", caption: "Each story follows the same pattern with a gold rule under the headline." },
+            { src: "/projects/crowe-mackay/aw-4-iran.jpg", caption: "Every story closes with its source. A new issue went out every week." },
+          ],
+        },
+        {
           title: "Staff profile pages",
           images: [
             { src: "/projects/crowe-mackay/profile-1-header.jpg", caption: "Profile header on crowe.com: photo, name, credentials, title and office." },
