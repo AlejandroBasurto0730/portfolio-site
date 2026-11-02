@@ -12,6 +12,11 @@ export function LanguageProvider({ children }) {
   });
 
   useEffect(() => {
+    document.documentElement.lang = lang;
+    document.title =
+      lang === "es"
+        ? "Alejandro Basurto — Diseñador gráfico y de motion en Vancouver, BC"
+        : "Alejandro Basurto — Graphic & Motion Designer in Vancouver, BC";
     try {
       localStorage.setItem("site-lang", lang);
     } catch {

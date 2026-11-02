@@ -1928,3 +1928,11 @@ section {
 .hero-move-in{animation:heroMoveIn .9s cubic-bezier(.2,.8,.2,1) .2s both}
 @keyframes heroMoveIn{from{opacity:0;transform:translateX(-0.5em);filter:blur(16px)}60%{filter:blur(4px)}to{opacity:1;transform:none;filter:blur(0)}}
 @media (prefers-reduced-motion:reduce){.hero-move-in{animation:none}}
+
+/* Footer: contact on every screen of the page */
+.site-footer{border-top:1px solid var(--border,rgba(255,255,255,.12));padding:32px 0 40px;margin-top:24px}
+.site-footer-inner{display:flex;flex-wrap:wrap;gap:12px 32px;align-items:center;justify-content:space-between}
+.site-footer-line{margin:0;font-size:1rem}
+.site-footer-line a,.site-footer-links a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.site-footer-links{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:.95rem}
+.site-footer-meta{margin:0;width:100%;font-size:.8rem;opacity:.6}

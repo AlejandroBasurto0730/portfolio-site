@@ -7,6 +7,7 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Credibility from "./components/Credibility";
 import Marquee from "./components/Marquee";
+import Footer from "./components/Footer";
 import Cursor from "./components/Cursor";
 import { LanguageProvider } from "./LanguageContext";
 import "./App.css";
@@ -42,6 +43,7 @@ export default function App() {
         <Skills />
         <Contact />
       </main>
+      <Footer />
       <Cursor />
     </LanguageProvider>
   );
