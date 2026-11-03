@@ -82,6 +82,12 @@ export const projectsEs = {
         "Un sistema de identidad completo — logo, color, tipografía, papelería, señalética, y plantillas de presentación — más un sitio bilingüe (inglés/español) construido desde cero en HTML, CSS, y JavaScript, sin plantilla. Todo construido alrededor de 30+ años de experiencia y la involucración directa del socio, diseñado para leerse como establecido y confiable en vez de como una marca genérica de contaduría.",
       sections: [
         {
+          title: "Animación del Logo",
+          images: [
+            "El logo en movimiento — las líneas trazan las letras mientras la cámara se aleja, luego la marca se rellena y el círculo de la A llega al final. Toca para verlo con sonido.",
+          ],
+        },
+        {
           title: "Estrategia de Marca",
           images: [
             "La firma, misión, y visión — sobre lo que construí el resto de la identidad.",

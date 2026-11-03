@@ -33,6 +33,12 @@ export const projects = [
         "A full identity system — logo, color, typography, stationery, signage, and presentation templates — plus a bilingual (English/Spanish) site built from scratch in HTML, CSS, and JavaScript, no template. Everything built around 30+ years of experience and direct partner involvement, designed to read as established and trustworthy rather than like a stock accounting-firm brand.",
       sections: [
         {
+          title: "Logo Animation",
+          images: [
+            { src: "/projects/basher-logo-animation.mp4", poster: "/projects/basher-logo-animation-poster.jpg", type: "video", caption: "Logo reveal in motion — the lines trace the letters while the camera pulls back, then the mark fills in and the circle of the A lands last. Tap to play with sound." },
+          ],
+        },
+        {
           title: "Brand Strategy",
           images: [
             { src: "/projects/basher-identity/strategy-01-firm-mission-vision.jpg", caption: "The firm, mission, and vision — what I built the rest of the identity around." },
