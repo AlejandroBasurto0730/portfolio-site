@@ -8,7 +8,7 @@ const COPY = {
 
 // Hero reel: starts muted and looping as soon as it is on screen.
 // Sound is opt-in with one tap.
-export default function Reel({ src = "/projects/demo-reel.mp4", poster = "/projects/demo-reel-poster.jpg", label = "Demo reel · 30 s" }) {
+export default function Reel({ src = "/projects/demo-reel.mp4", poster = "/projects/demo-reel-poster.jpg", label = "Demo reel · 40 s" }) {
   const { lang } = useLanguage();
   const c = COPY[lang];
   const videoRef = useRef(null);

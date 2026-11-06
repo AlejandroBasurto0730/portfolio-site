@@ -114,6 +114,12 @@ export const projects = [
         "A system that holds up the same on a 20cm box, a 45mm stamp, and a storefront awning, and that lets the cake stay the most eye-catching part of the piece. In use since 2026 at the Francisco Villa 21 location.",
       sections: [
         {
+          title: "Logo Animation",
+          images: [
+            { src: "/projects/candies-logo-animation.mp4", poster: "/projects/candies-logo-animation-poster.jpg", type: "video", caption: "Logo reveal in motion — the cupcake, the pastry, and the cheesecake slice take their places before the wordmark settles in. Tap to play with sound." },
+          ],
+        },
+        {
           title: "Brand Identity",
           images: [
             { src: "/projects/candies-case-study/identity-01-logotype.jpg", caption: "The primary logotype — a light, high-contrast Garamond with wide spacing and no ornament." },

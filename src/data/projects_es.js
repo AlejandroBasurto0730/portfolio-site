@@ -17,6 +17,12 @@ export const projectsEs = {
         "Un sistema que funciona igual en una caja de 20cm, un sello de 45mm, y un toldo, y que deja que el pastel siga siendo lo más llamativo de la pieza. En uso desde 2026 en el local de Francisco Villa 21.",
       sections: [
         {
+          title: "Animación del Logo",
+          images: [
+            "Revelado del logo en movimiento — el cupcake, el pan y la rebanada de cheesecake toman su lugar antes de que aparezca el nombre. Toca para reproducir con sonido.",
+          ],
+        },
+        {
           title: "Identidad de Marca",
           images: [
             "El logotipo principal — una Garamond ligera y de alto contraste, muy espaciada y sin ningún adorno.",
