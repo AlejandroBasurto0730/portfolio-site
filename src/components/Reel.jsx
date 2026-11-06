@@ -2,13 +2,13 @@ import { useEffect, useRef, useState } from "react";
 import { useLanguage } from "../LanguageContext";
 
 const COPY = {
-  en: { label: "Demo reel · 30 s", soundOn: "Sound on", soundOff: "Sound off" },
-  es: { label: "Demo reel · 30 s", soundOn: "Activar sonido", soundOff: "Silenciar" },
+  en: { soundOn: "Sound on", soundOff: "Sound off" },
+  es: { soundOn: "Activar sonido", soundOff: "Silenciar" },
 };
 
 // Hero reel: starts muted and looping as soon as it is on screen.
 // Sound is opt-in with one tap.
-export default function Reel() {
+export default function Reel({ src = "/projects/demo-reel.mp4", poster = "/projects/demo-reel-poster.jpg", label = "Demo reel · 30 s" }) {
   const { lang } = useLanguage();
   const c = COPY[lang];
   const videoRef = useRef(null);
@@ -42,8 +42,8 @@ export default function Reel() {
       <div className="reel-frame">
         <video
           ref={videoRef}
-          src="/projects/demo-reel.mp4"
-          poster="/projects/demo-reel-poster.jpg"
+          src={src}
+          poster={poster}
           autoPlay
           muted
           loop
@@ -54,7 +54,7 @@ export default function Reel() {
           {muted ? c.soundOn : c.soundOff}
         </button>
       </div>
-      <span className="reel-label">{c.label}</span>
+      <span className="reel-label">{label}</span>
     </div>
   );
 }

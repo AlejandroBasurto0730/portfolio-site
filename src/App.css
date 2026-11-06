@@ -1936,3 +1936,4 @@ section {
 .site-footer-line a,.site-footer-links a{color:inherit;text-decoration:underline;text-underline-offset:3px}
 .site-footer-links{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:.95rem}
 .site-footer-meta{margin:0;width:100%;font-size:.8rem;opacity:.6}
+.hero-visual{display:flex;flex-direction:column;gap:56px}

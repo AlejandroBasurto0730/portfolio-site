@@ -34,6 +34,11 @@ export default function Hero() {
       </div>
 
       <div className="hero-visual container">
+        <Reel
+          src="/projects/compass-card-reload.mp4"
+          poster="/projects/compass-card-reload-poster.jpg"
+          label={lang === "es" ? "Compass Card Reload · Animación explicativa" : "Compass Card Reload · Explainer animation"}
+        />
         <Reel />
       </div>
     </section>
