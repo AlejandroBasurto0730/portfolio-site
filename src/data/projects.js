@@ -102,8 +102,9 @@ export const projects = [
     category: "design",
     blurb: "A mobile app concept for a Swiss chocolate brand — order the bars in a few taps, then book a visit to where they're made.",
     tags: ["UI/UX", "Mobile App", "Prototype"],
-    media: "/projects/ragusa-poster.jpg",
-    mediaType: "image",
+    media: "/projects/ragusa.mp4",
+    mediaType: "video",
+    poster: "/projects/ragusa-poster.jpg",
     caseStudy: {
       prototypeUrl: "https://www.figma.com/proto/mG3aeLh5wIRagsddAglNa6/Ragusa?node-id=2177-129&t=4pCfnyQ7qGl1sRYM-1",
       problem:
@@ -111,6 +112,12 @@ export const projects = [
       solution:
         "A clickable prototype built on the brand's own warm browns and orange, with condensed, loud headlines (\"Go a little nuts.\", \"Find your Ragusa.\"). Onboarding sells the range and the Discovery World visit, the Shop filters bars, snacks and gifts, and the Bag shows a free-delivery progress bar toward CHF 50, a promo code field, and TWINT at checkout.",
       sections: [
+        {
+          title: "Promo Video",
+          images: [
+            { src: "/projects/ragusa-promo.mp4", poster: "/projects/ragusa-promo-poster.jpg", type: "video", caption: "A 46-second promo that walks the app from splash to checkout to booking a visit in Courtelary. Tap to play with sound." },
+          ],
+        },
         {
           title: "Onboarding & Account",
           images: [

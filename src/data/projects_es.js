@@ -15,6 +15,12 @@ export const projectsEs = {
         "Un prototipo clicable construido sobre los cafés y el naranja propios de la marca, con titulares condensados y fuertes (\"Go a little nuts.\", \"Find your Ragusa.\"). El onboarding vende la gama y la visita al Discovery World, la Tienda filtra barras, snacks y regalos, y la Bolsa muestra una barra de progreso hacia el envío gratis desde CHF 50, un campo de código promocional y TWINT al pagar.",
       sections: [
         {
+          title: "Video Promocional",
+          images: [
+            "Un promo de 46 segundos que recorre la app desde el splash hasta el pago y la reserva de una visita en Courtelary. Toca para reproducir con sonido.",
+          ],
+        },
+        {
           title: "Onboarding y Cuenta",
           images: [
             "Onboarding, segunda pantalla — \"Find your Ragusa\": la gama de un vistazo y la promesa de envío gratis.",
