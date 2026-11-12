@@ -93,6 +93,45 @@ export const projects = [
     link: "",
   },
   {
+    id: "prj_11",
+    code: "PRJ_00",
+    timecode: "00:00:09:12",
+    title: "Ragusa — Mobile App Concept",
+    type: "UI/UX Design · Mobile app prototype",
+    year: "2026",
+    category: "design",
+    blurb: "A mobile app concept for a Swiss chocolate brand — order the bars in a few taps, then book a visit to where they're made.",
+    tags: ["UI/UX", "Mobile App", "Prototype"],
+    media: "/projects/ragusa-poster.jpg",
+    mediaType: "image",
+    caseStudy: {
+      prototypeUrl: "https://www.figma.com/proto/mG3aeLh5wIRagsddAglNa6/Ragusa?node-id=2177-129&t=4pCfnyQ7qGl1sRYM-1",
+      problem:
+        "Ragusa is an original since 1942, made in Courtelary in the Bernese Jura. The question I set myself: what does a bar people already know look like as an app — one that turns ordering into a few taps and points people toward the place where it's made?",
+      solution:
+        "A clickable prototype built on the brand's own warm browns and orange, with condensed, loud headlines (\"Go a little nuts.\", \"Find your Ragusa.\"). Onboarding sells the range and the Discovery World visit, the Shop filters bars, snacks and gifts, and the Bag shows a free-delivery progress bar toward CHF 50, a promo code field, and TWINT at checkout.",
+      sections: [
+        {
+          title: "Onboarding & Account",
+          images: [
+            { src: "/projects/ragusa/01-onboarding-range.jpg", caption: "Onboarding, screen two — \"Find your Ragusa\": the range at a glance and the free-delivery promise." },
+            { src: "/projects/ragusa/02-onboarding-visit.jpg", caption: "Onboarding, screen three — points to Courtelary, the Discovery World, and the Escape Game." },
+            { src: "/projects/ragusa/03-sign-up.jpg", caption: "Sign up — three fields, a terms checkbox, and an opt-in for news and visitor-centre events." },
+            { src: "/projects/ragusa/04-sign-in.jpg", caption: "Sign in — with Apple, Google, or straight in as a guest." },
+          ],
+        },
+        {
+          title: "Shop & Bag",
+          images: [
+            { src: "/projects/ragusa/05-home.jpg", caption: "Home — a full-bleed hero for the new So Nuts Blond, then The Originals." },
+            { src: "/projects/ragusa/06-shop.jpg", caption: "Shop — search, category filters, favourites, and one-tap add to bag." },
+            { src: "/projects/ragusa/07-bag.jpg", caption: "Bag — a free-delivery progress bar, editable quantities, a promo code field, and a running total." },
+          ],
+        },
+      ],
+    },
+  },
+  {
     id: "prj_09",
     code: "PRJ_00",
     timecode: "00:00:06:02",

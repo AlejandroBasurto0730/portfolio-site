@@ -3,6 +3,38 @@
 // sections/images in projects.js — see localizeProject() in i18n.js.
 
 export const projectsEs = {
+  prj_11: {
+    // Ragusa
+    type: "Diseño UI/UX · Prototipo de app móvil",
+    blurb: "Un concepto de app móvil para una marca de chocolate suizo — pide las barras en unos toques y reserva una visita al lugar donde se hacen.",
+    tags: ["UI/UX", "App móvil", "Prototipo"],
+    caseStudy: {
+      problem:
+        "Ragusa es un original desde 1942, hecho en Courtelary, en el Jura bernés. La pregunta que me puse: ¿cómo se ve en una app una barra que la gente ya conoce — una que convierte el pedido en unos cuantos toques y lleva a la gente hacia el lugar donde se hace?",
+      solution:
+        "Un prototipo clicable construido sobre los cafés y el naranja propios de la marca, con titulares condensados y fuertes (\"Go a little nuts.\", \"Find your Ragusa.\"). El onboarding vende la gama y la visita al Discovery World, la Tienda filtra barras, snacks y regalos, y la Bolsa muestra una barra de progreso hacia el envío gratis desde CHF 50, un campo de código promocional y TWINT al pagar.",
+      sections: [
+        {
+          title: "Onboarding y Cuenta",
+          images: [
+            "Onboarding, segunda pantalla — \"Find your Ragusa\": la gama de un vistazo y la promesa de envío gratis.",
+            "Onboarding, tercera pantalla — apunta a Courtelary, el Discovery World y el Escape Game.",
+            "Registro — tres campos, una casilla de términos y la opción de recibir novedades y eventos del centro de visitantes.",
+            "Inicio de sesión — con Apple, Google, o directo como invitado.",
+          ],
+        },
+        {
+          title: "Tienda y Bolsa",
+          images: [
+            "Inicio — un hero a pantalla completa para el nuevo So Nuts Blond y luego Los Originales.",
+            "Tienda — búsqueda, filtros por categoría, favoritos y agregar a la bolsa con un toque.",
+            "Bolsa — barra de progreso hacia el envío gratis, cantidades editables, campo de código promocional y total al momento.",
+          ],
+        },
+      ],
+    },
+  },
+
   prj_09: {
     // Candies
     type: "Identidad de Marca · Cliente real",

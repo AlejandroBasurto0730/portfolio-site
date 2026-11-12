@@ -57,7 +57,7 @@ export default function ProjectModal({ project, onClose, origin }) {
 
   if (!project) return null;
   const { title, type, year, blurb, caseStudy } = project;
-  const { problem, solution, research, liveUrl, pdfUrl } = caseStudy || {};
+  const { problem, solution, research, liveUrl, pdfUrl, prototypeUrl } = caseStudy || {};
 
   return createPortal(
     <>
@@ -76,6 +76,11 @@ export default function ProjectModal({ project, onClose, origin }) {
             {pdfUrl && (
               <a className="modal-live-link" href={pdfUrl} target="_blank" rel="noreferrer" download>
                 {modal.viewPdf}
+              </a>
+            )}
+            {prototypeUrl && (
+              <a className="modal-live-link" href={prototypeUrl} target="_blank" rel="noreferrer">
+                {modal.viewPrototype}
               </a>
             )}
             {liveUrl && (
